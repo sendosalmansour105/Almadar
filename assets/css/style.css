@@ -25,7 +25,7 @@
   --silver-chalice: hsl(0, 0%, 69%);
   --mikado-yellow: #f2925f;
   --granite-gray: hsl(0, 0%, 40%);
-  --independence: hsl(219, 20%, 32%);
+  --independence: hsl(132, 5%, 39%);
   --spanish-gray: hsl(0, 0%, 61%);
   --oxford-blue: hsl(222, 46%, 17%);
   --black-coral: hsl(223, 8%, 44%);
@@ -608,7 +608,7 @@ text-align: center;
 \*-----------------------------------*/
 
 .footer {
-  background-color: var(--oxford-blue);
+  background-color: #3f4040b7;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
