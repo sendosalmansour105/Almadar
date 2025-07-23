@@ -24,3 +24,25 @@ window.addEventListener("scroll", function () {
   window.scrollY >= 500 ? goTopBtn.classList.add("active")
     : goTopBtn.classList.remove("active");
 });
+
+
+// show items
+
+const observe = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show-items')
+    }
+    else {
+      entry.target.classList.remove('show-items')
+    }
+  })
+})
+
+const scrollscale = document.querySelectorAll('.scroll-scale')
+scrollscale.forEach((el) => observe.observe(el))
+
+
+
+
+

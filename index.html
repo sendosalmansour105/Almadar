@@ -26,6 +26,7 @@
     href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -85,6 +86,7 @@
           <img src="./assets/images/whatsapp.svg" class="whatsapp" />
           <p>097-150-8853854</p>
         </a>
+      
 
 
       </nav>
@@ -108,6 +110,16 @@
           <video autoplay loop muted plays-inline class="backgroundVideo">
             <source src="./assets/images/bg.mp4" type="video/mp4">
           </video>
+          <div class="social-icons">
+            <div class="socialcontent">
+              <a class="btn btn-dark m-1" href="#!"><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-dark m-1" href="#!"><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-dark m-1" href="#!"><i class="fab fa-instagram"></i></a>
+              <a class="btn btn-dark m-1" href="#!"><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-dark m-1" href="#!"><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-dark m-1" href="#!"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
           <!-- <div class="content">
             <h1>explore more</h1>
             <a href="#">learn</a>
@@ -129,18 +141,18 @@
       -->
 
       <section class="section destination " id="works">
-        <div class="container">
+        <div class="container ">
 
-          <p class="section-subtitle">Our Works</p>
+          <p class="section-subtitle autoshow">Our Works</p>
 
           <h2 class="h2 section-title">Choose Your Design</h2>
 
-          <ul class="destination-list">
+          <ul class="destination-list ">
 
-            <li class="w-50">
+            <li class="w-50 scroll-scale ">
               <a href="#" class="destination-card">
 
-                <figure class="card-banner">
+                <figure class="card-banner ">
                   <img src="./assets/images/i (7).jpg" width="1140" height="1100" loading="lazy" alt="Malé, Maldives"
                     class="img-cover">
                 </figure>
@@ -154,7 +166,7 @@
               </a>
             </li>
 
-            <li class="w-50">
+            <li class="w-50 scroll-scale ">
               <a href="#" class="destination-card">
 
                 <figure class="card-banner">
@@ -171,7 +183,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="scroll-scale">
               <a href="#" class="destination-card">
 
                 <figure class="card-banner">
@@ -188,7 +200,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="scroll-scale">
               <a href="#" class="destination-card">
 
                 <figure class="card-banner">
@@ -204,7 +216,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="scroll-scale">
               <a href="#" class="destination-card">
 
                 <figure class="card-banner">
@@ -232,7 +244,7 @@
         - #ABOUT
       -->
 
-      <section class="section about" id="about">
+      <section class="section about " id="about">
         <div class="container">
 
           <div class="about-content">
@@ -241,7 +253,7 @@
 
             <h2 class="h2 section-title">Explore all our works with us.</h2>
 
-            <p class="about-text">
+            <p class="about-text scroll-scale">
               Since our founding in early 2024,
               we have been committed to providing design services in the UAE and the GCC as an exterior and interior
               design firm.
@@ -252,15 +264,15 @@
               the next level, utilizing our expertise and knowledge.
             </p>
 
-            <ul class="about-list">
+            <ul class="about-list scroll-scale">
 
               <li class="about-item">
 
-                <div class="about-item-icon">
+                <div class="about-item-icon s">
                   <ion-icon name="compass"></ion-icon>
                 </div>
 
-                <div class="about-item-content">
+                <div class="about-item-content ">
                   <h3 class="h3 about-item-title">Distinctive designs</h3>
 
                   <p class="about-item-text">
@@ -321,7 +333,7 @@
         - #services
       -->
 
-      <section class="section popular">
+      <section class="section popular imageRevel2" id="services">
         <div class="container">
 
           <p class="section-subtitle">Our services</p>
@@ -330,10 +342,10 @@
 
           <ul class="popular-list">
 
-            <li>
+            <li class="scroll-scale">
               <div class="popular-card">
 
-                <figure class="card-banner">
+                <figure class="card-banner" id="interior">
                   <a href="#">
                     <img src="./assets/images/s1.jpg" width="740" height="518" loading="lazy"
                       alt="Kuala Lumpur, Malaysia" class="img-cover">
@@ -363,10 +375,10 @@
               </div>
             </li>
 
-            <li>
+          <li class="scroll-scale">
               <div class="popular-card">
 
-                <figure class="card-banner">
+                <figure class="card-banner" id="exterior">
                   <a href="#">
                     <img src="./assets/images/s2.jfif" width="740" height="518" loading="lazy"
                       alt="Kuala Lumpur, Malaysia" class="img-cover">
@@ -397,10 +409,10 @@
               </div>
             </li>
 
-            <li>
+            <li class="scroll-scale">
               <div class="popular-card">
 
-                <figure class="card-banner">
+                <figure class="card-banner" id="landscape">
                   <a href="#">
                     <img src="./assets/images/s3.jpg" width="740" height="518" loading="lazy"
                       alt="Kuala Lumpur, Malaysia" class="img-cover">
@@ -443,7 +455,7 @@
       <!--
        #clients
   -->
-      <section class="section about" id="about">
+      <section class="section about imageRevel" id="client">
         <div class="container">
 
           <div class="about-content">
@@ -506,7 +518,7 @@
         - #BLOG
       -->
 
-      <section class="section blog">
+      <section class="section blog imageRevel" id="blog">
         <div class="container">
 
           <p class="section-subtitle">From The Blog Post</p>
@@ -515,7 +527,7 @@
 
           <ul class="blog-list">
 
-            <li>
+             <li class="scroll-scale">
               <div class="blog-card">
 
                 <figure class="card-banner">
@@ -552,7 +564,8 @@
 
                   <h3 class="card-title">
                     <a href="#">
-                     "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details."
+                      "A unique harmony of elegance and comfort, captured in this modern interior design with its soft
+                      tones and refined details."
                     </a>
                   </h3>
 
@@ -567,7 +580,7 @@
               </div>
             </li>
 
-            <li>
+             <li class="scroll-scale">
               <div class="blog-card">
 
                 <figure class="card-banner">
@@ -578,7 +591,7 @@
                   </a>
 
                   <span class="card-badge">
-                 
+
 
                     <time datetime="12-04">04 Dec</time>
                   </span>
@@ -590,7 +603,7 @@
                   <div class="card-wrapper">
 
                     <div class="author-wrapper">
-                  
+
 
                       <div>
                         <a href="#" class="author-name">Jony bristow</a>
@@ -605,7 +618,8 @@
 
                   <h3 class="card-title">
                     <a href="#">
-                    "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details."
+                      "A unique harmony of elegance and comfort, captured in this modern interior design with its soft
+                      tones and refined details."
                     </a>
                   </h3>
 
@@ -620,7 +634,7 @@
               </div>
             </li>
 
-            <li>
+             <li class="scroll-scale">
               <div class="blog-card">
 
                 <figure class="card-banner">
@@ -631,7 +645,7 @@
                   </a>
 
                   <span class="card-badge">
-                   
+
 
                     <time datetime="12-04">04 Dec</time>
                   </span>
@@ -643,7 +657,7 @@
                   <div class="card-wrapper">
 
                     <div class="author-wrapper">
-                     
+
 
                       <div>
                         <a href="#" class="author-name">Jony bristow</a>
@@ -658,7 +672,8 @@
 
                   <h3 class="card-title">
                     <a href="#">
-                    "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details."
+                      "A unique harmony of elegance and comfort, captured in this modern interior design with its soft
+                      tones and refined details."
                     </a>
                   </h3>
 
@@ -674,7 +689,7 @@
             </li>
 
 
-            <li>
+            <li class="scroll-scale">
               <div class="blog-card">
 
                 <figure class="card-banner">
@@ -685,7 +700,7 @@
                   </a>
 
                   <span class="card-badge">
-               
+
 
                     <time datetime="12-04">04 Dec</time>
                   </span>
@@ -697,7 +712,7 @@
                   <div class="card-wrapper">
 
                     <div class="author-wrapper">
-                     
+
                       <div>
                         <a href="#" class="author-name">Jony bristow</a>
 
@@ -711,7 +726,8 @@
 
                   <h3 class="card-title">
                     <a href="#">
-                    "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details."
+                      "A unique harmony of elegance and comfort, captured in this modern interior design with its soft
+                      tones and refined details."
                     </a>
                   </h3>
 
@@ -726,7 +742,7 @@
               </div>
             </li>
 
-            <li>
+            <li class="scroll-scale">
               <div class="blog-card">
 
                 <figure class="card-banner">
@@ -737,7 +753,7 @@
                   </a>
 
                   <span class="card-badge">
-                 
+
 
                     <time datetime="12-04">04 Dec</time>
                   </span>
@@ -749,7 +765,7 @@
                   <div class="card-wrapper">
 
                     <div class="author-wrapper">
-                     
+
 
                       <div>
                         <a href="#" class="author-name">Jony bristow</a>
@@ -764,7 +780,8 @@
 
                   <h3 class="card-title">
                     <a href="#">
-                     "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details."
+                      "A unique harmony of elegance and comfort, captured in this modern interior design with its soft
+                      tones and refined details."
                     </a>
                   </h3>
 
@@ -780,7 +797,7 @@
             </li>
 
 
-            <li>
+            <li class="scroll-scale">
               <div class="blog-card">
 
                 <figure class="card-banner">
@@ -791,7 +808,7 @@
                   </a>
 
                   <span class="card-badge">
-                
+
                     <time datetime="12-04">04 Dec</time>
                   </span>
 
@@ -802,7 +819,7 @@
                   <div class="card-wrapper">
 
                     <div class="author-wrapper">
-                    
+
                       <div>
                         <a href="#" class="author-name">Jony bristow</a>
 
@@ -816,7 +833,8 @@
 
                   <h3 class="card-title">
                     <a href="#">
-                   "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details."
+                      "A unique harmony of elegance and comfort, captured in this modern interior design with its soft
+                      tones and refined details."
                     </a>
                   </h3>
 
@@ -859,15 +877,15 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Living Room</a>
+            <a href="#works" class="footer-link">Living Room</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Kitchens</a>
+            <a href="#works" class="footer-link">Kitchens</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Bedroom</a>
+            <a href="#works" class="footer-link">Bedroom</a>
           </li>
 
 
@@ -880,15 +898,15 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Exterior</a>
+            <a href="#exterior" class="footer-link">Exterior</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Interior</a>
+            <a href="#interior" class="footer-link">Interior</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Landscape</a>
+            <a href="#landscape" class="footer-link">Landscape</a>
           </li>
 
 
@@ -902,23 +920,25 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">About us</a>
+            <a href="#about" class="footer-link">About us</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Our works</a>
+            <a href="#works" class="footer-link">Our works</a>
+          </li>
+          <li>
+            <a href="#blog" class="footer-link">Blogs</a>
+          </li>
+          <li>
+            <a href="#services" class="footer-link">Services</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Services</a>
+            <a href="#client" class="footer-link">Our clients</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Our clients</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Contact us</a>
+            <a href="#contactus" class="footer-link">Contact us</a>
           </li>
 
 
@@ -932,7 +952,7 @@
             Order your designs from us
           </p>
 
-          <form action="" class="newsletter-form">
+          <form action="" class="newsletter-form" id="contactus">
             <input type="email" name="email" required placeholder="Email address" class="newsletter-input">
 
             <button type="submit" class="btn btn-primary">Subscribe</button>
