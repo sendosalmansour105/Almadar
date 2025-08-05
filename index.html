@@ -25,6 +25,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Cairo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
@@ -41,7 +42,7 @@
 
       <a href="#">
 
-        <h5 class="logo">AL MADAR <p>Al MUTAMAIZ</p>
+        <h5 class="logo" id="logo1">AL MADAR <p>Al MUTAMAIZ</p>
         </h5>
       </a>
 
@@ -55,31 +56,35 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="#home" class="navbar-link">Home</a>
+            <a href="#home" class="navbar-link" id="navbar-Home">Home</a>
           </li>
 
 
           <li>
-            <a href="#works" class="navbar-link">Our Works</a>
+            <a href="#works" class="navbar-link"  id="navbar-work">Our Works</a>
           </li>
           <li>
-            <a href="#about" class="navbar-link">About Us</a>
+            <a href="#about" class="navbar-link"  id="navbar-about">About Us</a>
           </li>
 
           <li>
-            <a href="#services" class="navbar-link">Services</a>
+            <a href="#services" class="navbar-link"  id="navbar-services">Services</a>
           </li>
 
           <li>
-            <a href="#client" class="navbar-link">Our Clients</a>
+            <a href="#client" class="navbar-link"  id="navbar-clients">Our Clients</a>
           </li>
           <li>
-            <a href="#blog" class="navbar-link">Blogs</a>
+            <a href="#blog" class="navbar-link"  id="navbar-blogs">Blogs</a>
           </li>
 
           <li>
-            <a href="#contactus" class="navbar-link">Contact Us</a>
+            <a href="#contactus" class="navbar-link"  id="navbar-contact">Contact Us</a>
           </li>
+          <li>
+            <a href="#home" id="langBtn" onclick="toggleLanguage()" class="navbar-link">Arabic</a>
+          </li>
+                
 
         </ul>
 
@@ -141,9 +146,9 @@
       <section class="section destination " id="works">
         <div class="container ">
 
-          <p class="section-subtitle autoshow">Our Works</p>
+          <p class="section-subtitle autoshow" id="title-work">Our Works</p>
 
-          <h2 class="h2 section-title">Choose Your Design</h2>
+          <h2 class="h2 section-title" id="subWork">Choose Your Design</h2>
 
           <ul class="destination-list ">
 
@@ -158,7 +163,7 @@
                 <div class="card-content">
                   <!-- <p class="card-subtitle">Living Room</p> -->
 
-                  <h3 class="h3 card-title">Living Room</h3>
+                  <h3 class="h3 card-title" id="card-title-c1">Living Room</h3>
                 </div>
 
               </a>
@@ -175,7 +180,7 @@
                 <div class="card-content">
                   <!-- <p class="card-subtitle">Bedroom</p> -->
 
-                  <h3 class="h3 card-title">Bedroom</h3>
+                  <h3 class="h3 card-title"  id="card-title-c2">Bedroom</h3>
                 </div>
 
               </a>
@@ -192,7 +197,7 @@
                 <div class="card-content">
                   <!-- <p class="card-subtitle"></p> -->
 
-                  <h3 class="h3 card-title">Walkways</h3>
+                  <h3 class="h3 card-title" id="card-title-c3">Walkways</h3>
                 </div>
 
               </a>
@@ -208,7 +213,7 @@
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">House</h3>
+                  <h3 class="h3 card-title" id="card-title-c4">House</h3>
                 </div>
 
               </a>
@@ -225,7 +230,7 @@
                 <div class="card-content">
 
 
-                  <h3 class="h3 card-title">Library</h3>
+                  <h3 class="h3 card-title" id="card-title-c5">Library</h3>
                 </div>
 
               </a>
@@ -247,17 +252,17 @@
 
           <div class="about-content">
 
-            <p class="section-subtitle">About Us</p>
+            <p class="section-subtitle" id="title-about">About Us</p>
 
-            <h2 class="h2 section-title">Explore all our works with us.</h2>
+            <h2 class="h2 section-title" id="subabout">Explore all our works with us.</h2>
 
-            <p class="about-text scroll-scale">
+            <p class="about-text scroll-scale" id="about-content">
               Since our founding in early 2024,
               we have been committed to providing design services in the UAE and the GCC as an exterior and interior
               design firm.
               Although AL MADAR AL MUTAMAIZ is a fledgling company compared to other design firms in the UAE market,
               we have managed to gain the trust of numerous clients through our diverse and comprehensive
-              services.<br />
+              services.<br /> 
               Through our commitment to precision and high quality in our design services, we can take your project to
               the next level, utilizing our expertise and knowledge.
             </p>
@@ -271,9 +276,9 @@
                 </div>
 
                 <div class="about-item-content ">
-                  <h3 class="h3 about-item-title">Distinctive designs</h3>
+                  <h3 class="h3 about-item-title" id="designs">Distinctive designs</h3>
 
-                  <p class="about-item-text">
+                  <p class="about-item-text" id="designscontent">
                     With us, you get a unique design with a distinctive coordination and arrangement.
                   </p>
                 </div>
@@ -287,9 +292,9 @@
                 </div>
 
                 <div class="about-item-content">
-                  <h3 class="h3 about-item-title">Friendly price</h3>
+                  <h3 class="h3 about-item-title" id="price">Friendly price</h3>
 
-                  <p class="about-item-text">
+                  <p class="about-item-text" id="pricecontent">
                     High quality and craftsmanship at competitive prices
                   </p>
                 </div>
@@ -303,9 +308,9 @@
                 </div>
 
                 <div class="about-item-content">
-                  <h3 class="h3 about-item-title">Fast service</h3>
+                  <h3 class="h3 about-item-title" id="fast">Fast service</h3>
 
-                  <p class="about-item-text">
+                  <p class="about-item-text" id="fastcontent">
                     We respond to your requests 24/7.
                   </p>
                 </div>
@@ -314,7 +319,7 @@
 
             </ul>
             <div class="contactus"> <a href="tel:+971569281278" class="btn btn-primary"
-                style="align-items: center;">Call Us</a>
+                style="align-items: center;" id="callus">Call Us</a>
             </div>
 
           </div>
@@ -334,9 +339,9 @@
       <section class="section popular imageRevel2" id="services">
         <div class="container">
 
-          <p class="section-subtitle">Our services</p>
+          <p class="section-subtitle" id="service">Our services</p>
 
-          <h2 class="h2 section-title">Services we provide</h2>
+          <h2 class="h2 section-title" id="subservice">Services we provide</h2>
 
           <ul class="popular-list">
 
@@ -357,15 +362,15 @@
                 <div class="card-content">
 
                   <div class="card-wrapper">
-                    <div class="card-price">Interoir design</div>
+                    <div class="card-price" id="interiorservice">Interoir design</div>
 
                   </div>
 
                   <h3 class="card-title">
-                    <a href="#">Living Room, Dining Room, Bedroom, etc.</a>
+                    <a href="#" id="interiortitle">Living Room, Dining Room, Bedroom, etc.</a>
                   </h3>
 
-                  <address class="card-location">Interior design is the art and science of enhancing the interior of a
+                  <address class="card-location" id="interiorcontent">Interior design is the art and science of enhancing the interior of a
                     building.</address>
 
                 </div>
@@ -390,16 +395,16 @@
                 <div class="card-content">
 
                   <div class="card-wrapper">
-                    <div class="card-price">Exterior design </div>
+                    <div class="card-price"  id="exteriorservice">Exterior design </div>
 
 
                   </div>
 
                   <h3 class="card-title">
-                    <a href="#"> Villas, Hotels, Places, homes, restaurants, etc.</a>
+                    <a href="#"  id="exteriortitle"> Villas, Hotels, Places, homes, restaurants, etc.</a>
                   </h3>
 
-                  <address class="card-location">Exterior design is the process of designing the external appearance.
+                  <address class="card-location" id="exteriorcontent">Exterior design is the process of designing the external appearance.
                   </address>
 
                 </div>
@@ -424,16 +429,16 @@
                 <div class="card-content">
 
                   <div class="card-wrapper">
-                    <div class="card-price">Landscape design</div>
+                    <div class="card-price" id="landscapeservice">Landscape design</div>
 
 
                   </div>
 
                   <h3 class="card-title">
-                    <a href="#">Walkways, courtyards, water bodies, parking etc.</a>
+                    <a href="#" id="landscapetitle">Walkways, courtyards, water bodies, parking etc.</a>
                   </h3>
 
-                  <address class="card-location">Landscape design is practiced by landscape designers, combining nature
+                  <address class="card-location" id="landscapecontent">Landscape design is practiced by landscape designers, combining nature
                     and culture.</address>
 
                 </div>
@@ -458,9 +463,9 @@
 
           <div class="about-content">
 
-            <p class="section-subtitle">Our Clients</p>
+            <p class="section-subtitle" id="clients">Our Clients</p>
 
-            <h2 class="h2 section-title">We Work With The Best Clients</h2>
+            <h2 class="h2 section-title" id="subclients">We Work With The Best Clients</h2>
             <div class="slider">
               <div class="row">
 
@@ -520,16 +525,14 @@
 
           <div class="about-content">
 
-            <p class="section-subtitle">Details</p>
+            <p class="section-subtitle" id="details">Details</p>
 
-            <h2 class="h2 section-title">More Details About Us.</h2>
+            <h2 class="h2 section-title" id="subDetails">More Details About Us.</h2>
 
-            <p class="about-text ">
-              At Al-Madar, we believe every space has a story to tell — <br>and we bring that story to life through
-              unique,
-              customized designs. <br>With our exceptional team of engineers and designers, we transform ideas into
-              stunning
-              realities, down to the finest detail.
+            <p class="about-text " id="detailscontent">
+              At Al-Madar, we believe every space has a story to tell — <br>
+              and we bring that story to life through unique, customized designs. <br>
+              With our exceptional team of engineers and designers, we transform ideas into stunning realities, down to the finest detail.
               <br /><br>
               What sets us apart:<br>
 
@@ -537,18 +540,16 @@
 
               Fast and efficient project delivery without compromising on quality — we respect your time.<br>
 
-              Interior and exterior designs that reflect your style, whether modern, classic, or anything in
-              between.<br>
+              Interior and exterior designs that reflect your style, whether modern, classic, or anything in between.<br>
 
               <br><br>
-              From cozy homes to commercial landmarks, Al-Madar is your trusted partner in design excellence. Let us
-              turn your vision into a space you’ll love.
+              From cozy homes to commercial landmarks, Al-Madar is your trusted partner in design excellence. Let us turn your vision into a space you’ll love.
               <br>
               📞 Contact us today and let’s bring your dream design to life!
             </p>
 
-
-
+           
+         
 
           </div>
 
@@ -564,9 +565,9 @@
       <section class="section blog imageRevel" id="blog">
         <div class="container">
 
-          <p class="section-subtitle">From The Blog Post</p>
+          <p class="section-subtitle" id="blogs">From The Blog Post</p>
 
-          <h2 class="h2 section-title">Latest News & Articles</h2>
+          <h2 class="h2 section-title" id="subblogs">Latest News & Articles</h2>
 
           <ul class="blog-list">
 
@@ -944,19 +945,19 @@
           <li>
             <p href="#landscape" class="footer-link">Design </p>
 
-              <a href="#exterior" class="footer-link-item">Exterior</a>
-              <a href="#interior" class="footer-link-item">Interior</a>
-              <a href="#landscape" class="footer-link-item">Landscape</a>
-              <a href="#landscape" class="footer-link-item">Architectural drawing review services</a>
+            <a href="#exterior" class="footer-link-item">Exterior</a>
+            <a href="#interior" class="footer-link-item">Interior</a>
+            <a href="#landscape" class="footer-link-item">Landscape</a>
+            <a href="#landscape" class="footer-link-item">Architectural drawing review services</a>
 
           </li>
           <li>
             <p href="#landscape" class="footer-link">Execution</p>
-             <a href="#interior" class="footer-link-item">Interior</a>
+            <a href="#interior" class="footer-link-item">Interior</a>
           </li>
           <li>
             <a href="#landscape" class="footer-link">Supervision</a>
-             <a href="#interior" class="footer-link-item">Interior</a>
+            <a href="#interior" class="footer-link-item">Interior</a>
           </li>
 
         </ul>

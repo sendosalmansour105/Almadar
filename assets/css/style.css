@@ -3,10 +3,16 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 codewithsadee
+ * copyright 2025 by Sendos
  */
 
-
+  .rtl {
+      direction: rtl;
+      text-align: right;
+    }
+.arabicFont{
+  font-family: 'Cairo',sans-serif;
+}
 
 
 
@@ -149,6 +155,8 @@ html {
 body {
   background: var(--white-1);
   font-size: 1.6rem;
+  direction: ltr;
+  transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar {
