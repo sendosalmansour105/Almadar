@@ -53,6 +53,10 @@ const services = document.getElementById('navbar-services');
 const client = document.getElementById('navbar-clients');
 const blogs = document.getElementById('navbar-blogs');
 const contact = document.getElementById('navbar-contact');
+//hero//
+const explore = document.getElementById('exploremore');
+const exploretitle = document.getElementById('exploremoretitle');
+
 //works//
 const work = document.getElementById('title-work');
 const subWork = document.getElementById('subWork');
@@ -94,6 +98,38 @@ const detailscontent = document.getElementById('detailscontent')
 //blogs//
 const blog = document.getElementById('blogs');
 const subblogs = document.getElementById('subblogs');
+// card1 
+const blogscardname1 = document.getElementById('author-name1')
+const blogscardtitle1 = document.getElementById('author-title1')
+const blogscardcontent1 = document.getElementById('author-content1')
+const blogscardmore1 = document.getElementById('author-more1')
+// card2
+const blogscardname2 = document.getElementById('author-name2')
+const blogscardtitle2 = document.getElementById('author-title2')
+const blogscardcontent2 = document.getElementById('author-content2')
+const blogscardmore2 = document.getElementById('author-more2')
+// card3 
+const blogscardname3 = document.getElementById('author-name3')
+const blogscardtitle3 = document.getElementById('author-title3')
+const blogscardcontent3 = document.getElementById('author-content3')
+const blogscardmore3 = document.getElementById('author-more3')
+// card4 
+const blogscardname4 = document.getElementById('author-name4')
+const blogscardtitle4 = document.getElementById('author-title4')
+const blogscardcontent4 = document.getElementById('author-content4')
+const blogscardmore4 = document.getElementById('author-more4')
+// card5
+const blogscardname5 = document.getElementById('author-name5')
+const blogscardtitle5 = document.getElementById('author-title5')
+const blogscardcontent5 = document.getElementById('author-content5')
+const blogscardmore5 = document.getElementById('author-more5')
+// card6 
+const blogscardname6 = document.getElementById('author-name6')
+const blogscardtitle6 = document.getElementById('author-title6')
+const blogscardcontent6 = document.getElementById('author-content6')
+const blogscardmore6 = document.getElementById('author-more6')
+
+
 const langButton = document.getElementById('langBtn');
 const body = document.body;
 
@@ -108,6 +144,8 @@ const translations = {
     client: "Our Clients",
     blogs: "Blogs",
     contact: "Contact Us",
+    //hero
+    explore: "Design your dream space with us",
     //work
     work: "Our Works",
     subWork: "Choose Your Design",
@@ -149,15 +187,39 @@ const translations = {
     de1: " At Al-Madar, we believe every space has a story to tell —",
     de2: " and we bring that story to life through unique, customized designs.",
     de3: "With our exceptional team of engineers and designers, we transform ideas into stunning realities, down to the finest detail.",
-   de4:" What sets us apart:",
-   de5:"   A talented, professional team driven by passion, creativity, and attention to detail.",
-   de6:"   Fast and efficient project delivery without compromising on quality — we respect your time.", 
-   de7:" Interior and exterior designs that reflect your style, whether modern, classic, or anything in between.<br>",
-  de8:"From cozy homes to commercial landmarks, Al-Madar is your trusted partner in design excellence. Let us turn your vision into a space you’ll love.",
-  de9:" 📞 Contact us today and let’s bring your dream design to life!",
-   //blogs
+    de4: " What sets us apart:",
+    de5: "   A talented, professional team driven by passion, creativity, and attention to detail.",
+    de6: "   Fast and efficient project delivery without compromising on quality — we respect your time.",
+    de7: " Interior and exterior designs that reflect your style, whether modern, classic, or anything in between.<br>",
+    de8: "From cozy homes to commercial landmarks, Al-Madar is your trusted partner in design excellence. Let us turn your vision into a space you’ll love.",
+    de9: " 📞 Contact us today and let’s bring your dream design to life!",
+    //blogs
     blog: "From The Blog Post",
     subblogs: "Latest News & Articles",
+    blogscardname1: "Jony bristow",
+    blogscardtitle1: "Admin",
+    blogscardcontent1: "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details.",
+    blogscardmore1: "Read More",
+    blogscardname2: "Jony bristow",
+    blogscardtitle2: "Admin",
+    blogscardcontent2: "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details.",
+    blogscardmore2: "Read More",
+    blogscardname3: "Jony bristow",
+    blogscardtitle3: "Admin",
+    blogscardcontent3: "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details.",
+    blogscardmore3: "Read More",
+    blogscardname4: "Jony bristow",
+    blogscardtitle4: "Admin",
+    blogscardcontent4: "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details.",
+    blogscardmore4: "Read More",
+    blogscardname5: "Jony bristow",
+    blogscardtitle5: "Admin",
+    blogscardcontent5: "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details.",
+    blogscardmore5: "Read More",
+        blogscardname6:"Jony bristow",
+    blogscardtitle6:"Admin",
+    blogscardcontent6:"A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details.",
+    blogscardmore6:"Read More",
   },
   ar: {
     langButton: 'انكليزي',
@@ -168,6 +230,8 @@ const translations = {
     client: "عملائنا",
     blogs: "المدونة",
     contact: "تواصل معنا",
+    //hero
+    explore: "صمم مساحة أحلامك معنا",
     //work
     work: "أعمالنا",
     subWork: "أختر التصميم المناسب",
@@ -209,16 +273,39 @@ const translations = {
     de1: "  في شركتنا المدار المتميز ، نؤمن بأن لكل مساحة قصة ترويها، ونُجسّد هذه القصة من خلال تصاميم فريدة ومُصممة خصيصًا.",
     de2: "مع فريقنا المتميز من المهندسين والمصممين، نُحوّل الأفكار إلى واقعٍ مُبهر، بأدق التفاصيل.",
     de3: "",
-    de4:"ما يُميّزنا:",
-    de5:"فريق عمل موهوب ومحترف، مدفوع بالشغف والإبداع والاهتمام بالتفاصيل.",
-    de6:"تنفيذ سريع وفعال للمشاريع دون المساومة على الجودة - نحترم وقتكم.",
-    de7:"تصاميم داخلية وخارجية تُعبّر عن ذوقكم الرفيع، سواءً كان عصريًا أو كلاسيكيًا أو أي شيء بينهما.",
-    de8:"من المنازل المريحة إلى المعالم التجارية، المدار شريككم الموثوق في التميز في التصميم. دعنا نُحوّل رؤيتكم إلى مساحة ستُحبّونها.",
-    de9:" تواصلوا معنا اليوم لنُحوّل تصميم أحلامكم إلى واقع. 📞 ",
+    de4: "ما يُميّزنا:",
+    de5: "فريق عمل موهوب ومحترف، مدفوع بالشغف والإبداع والاهتمام بالتفاصيل.",
+    de6: "تنفيذ سريع وفعال للمشاريع دون المساومة على الجودة - نحترم وقتكم.",
+    de7: "تصاميم داخلية وخارجية تُعبّر عن ذوقكم الرفيع، سواءً كان عصريًا أو كلاسيكيًا أو أي شيء بينهما.",
+    de8: "من المنازل المريحة إلى المعالم التجارية، المدار شريككم الموثوق في التميز في التصميم. دعنا نُحوّل رؤيتكم إلى مساحة ستُحبّونها.",
+    de9: " تواصلوا معنا اليوم لنُحوّل تصميم أحلامكم إلى واقع. 📞 ",
     //blogs
     blog: "المدونة",
     subblogs: "آخر الأخبار والمقالات",
-
+    blogscardname1: "أحمد محمد",
+    blogscardtitle1: "الأدمن",
+    blogscardcontent1: "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
+    blogscardmore1: "تفاصيل أكثر ",
+        blogscardname2: "أحمد محمد",
+    blogscardtitle2: "الأدمن",
+    blogscardcontent2:  "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
+    blogscardmore2:"تفاصيل أكثر ",
+    blogscardname3:  "أحمد محمد",
+    blogscardtitle3: "الأدمن",
+    blogscardcontent3:  "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
+    blogscardmore3: "تفاصيل أكثر ",
+    blogscardname4:  "أحمد محمد",
+    blogscardtitle4:  "الأدمن",
+    blogscardcontent4: "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
+    blogscardmore4:"تفاصيل أكثر ",
+    blogscardname5:  "أحمد محمد",
+    blogscardtitle5:  "الأدمن",
+    blogscardcontent5:  "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
+    blogscardmore5: "تفاصيل أكثر ",
+        blogscardname6: "أحمد محمد",
+    blogscardtitle6: "الأدمن",
+    blogscardcontent6: "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
+    blogscardmore6:"تفاصيل أكثر ",
   }
 };
 
@@ -243,6 +330,8 @@ function applyLanguage(lang) {
   client.textContent = translations[lang].client;
   blogs.textContent = translations[lang].blogs;
   contact.textContent = translations[lang].contact;
+  explore.textContent = translations[lang].explore;
+
   work.textContent = translations[lang].work;
   subWork.textContent = translations[lang].subWork;
   card1.textContent = translations[lang].card1;
@@ -289,6 +378,33 @@ function applyLanguage(lang) {
   `
   blog.textContent = translations[lang].blog;
   subblogs.textContent = translations[lang].subblogs;
+  blogscardname1.textContent = translations[lang].blogscardname1;
+  blogscardtitle1.textContent = translations[lang].blogscardtitle1;
+  blogscardcontent1.textContent = translations[lang].blogscardcontent1;
+  blogscardmore1.textContent = translations[lang].blogscardmore1;
+  blogscardname2.textContent = translations[lang].blogscardname2;
+  blogscardtitle2.textContent = translations[lang].blogscardtitle2;
+  blogscardcontent2.textContent = translations[lang].blogscardcontent2;
+  blogscardmore2.textContent = translations[lang].blogscardmore2;
+    blogscardname3.textContent = translations[lang].blogscardname3;
+  blogscardtitle3.textContent = translations[lang].blogscardtitle3;
+  blogscardcontent3.textContent = translations[lang].blogscardcontent3;
+  blogscardmore3.textContent = translations[lang].blogscardmore3;
+    blogscardname4.textContent = translations[lang].blogscardname4;
+  blogscardtitle4.textContent = translations[lang].blogscardtitle4;
+  blogscardcontent4.textContent = translations[lang].blogscardcontent4;
+  blogscardmore4.textContent = translations[lang].blogscardmore4;
+    blogscardname5.textContent = translations[lang].blogscardname5;
+  blogscardtitle5.textContent = translations[lang].blogscardtitle5;
+  blogscardcontent5.textContent = translations[lang].blogscardcontent5;
+  blogscardmore5.textContent = translations[lang].blogscardmore5;
+    blogscardname6.textContent = translations[lang].blogscardname6;
+  blogscardtitle6.textContent = translations[lang].blogscardtitle6;
+  blogscardcontent6.textContent = translations[lang].blogscardcontent6;
+  blogscardmore6.textContent = translations[lang].blogscardmore6;
+
+
+
 
   if (lang === 'ar') {
     body.classList.add('rtl');
@@ -296,7 +412,7 @@ function applyLanguage(lang) {
     document.documentElement.lang = 'ar';
   } else {
     body.classList.remove('rtl');
-      body.classList.remove('arabicFont')
+    body.classList.remove('arabicFont')
     document.documentElement.lang = 'en';
   }
 }
