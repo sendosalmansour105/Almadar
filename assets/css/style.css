@@ -157,6 +157,7 @@ body {
   font-size: 1.6rem;
   direction: ltr;
   transition: all 0.3s ease;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
