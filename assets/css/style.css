@@ -492,7 +492,40 @@ overflow-x: hidden;
   border: none;
   background-color: #f9f9f9a7;
 }
+.socialcontent {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 
+  }
+@media (max-width: 992px) {
+
+  .social-icons {
+    position: absolute;
+    height: 100%;
+    top: 40%;
+    right: 2.5rem;
+    width: auto;
+  }
+  .social-icons .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100rem;
+  border: none;
+  background-color: #f9f9f9a7;
+}
+
+  .socialcontent {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+  }
+}
 @media (min-width: 992px) {
 
   .social-icons {
@@ -502,6 +535,17 @@ overflow-x: hidden;
     right: 2.5rem;
     width: auto;
   }
+  .social-icons .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 100rem;
+  border: none;
+  background-color: #f9f9f9a7;
+}
 
   .socialcontent {
     display: flex;
@@ -512,8 +556,13 @@ overflow-x: hidden;
 }
 
 @media (max-width: 700px) {
+ 
   .social-icons {
-    display: none;
+    position: absolute;
+    height: 100%;
+    top: 40%;
+    right: 2.5rem;
+    width: auto;
   }
 }
 
@@ -927,7 +976,7 @@ overflow-x: hidden;
   right: 15px;
   background: var(--mikado-yellow);
   color: var(--white-1);
-  font-size: 20px;
+  font-size: 22px;
   padding: 10px;
   border-radius: var(--radius-6);
   visibility: hidden;
@@ -1379,4 +1428,34 @@ main {
   .hero-subtitle {
     font-size: 1rem;
   }
+}
+
+
+.whatsAppIcon {
+  position: fixed;
+  bottom: 68px;
+  right: 15px;
+  background-color: var(--mikado-yellow);
+  color: var(--white-2);
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+    border-radius: var(--radius-6);
+  display: grid;
+  place-items: center;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition-1);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 4;
+}
+
+.whatsAppIcon:is(:hover, :focus-visible) {
+  background-color: white;
+  color: var(--mikado-yellow);
+}
+
+.whatsAppIcon.active {
+  opacity: 1;
+  visibility: visible;
 }

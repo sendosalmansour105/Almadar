@@ -53,9 +53,7 @@ const services = document.getElementById('navbar-services');
 const client = document.getElementById('navbar-clients');
 const blogs = document.getElementById('navbar-blogs');
 const contact = document.getElementById('navbar-contact');
-//hero//
-const explore = document.getElementById('exploremore');
-const exploretitle = document.getElementById('exploremoretitle');
+
 
 //works//
 const work = document.getElementById('title-work');
@@ -144,8 +142,7 @@ const translations = {
     client: "Our Clients",
     blogs: "Blogs",
     contact: "Contact Us",
-    //hero
-    explore: "Design your dream space with us",
+   
     //work
     work: "Our Works",
     subWork: "Choose Your Design",
@@ -165,7 +162,7 @@ const translations = {
     pricecontent: " High quality and craftsmanship at competitive prices",
     fast: "Fast service",
     fastcontent: " We respond to your requests 24/7.",
-    callus: "Call Us",
+    callus: "Contact Us",
     //service
     service: "Our services",
     subservice: "Services we provide",
@@ -230,8 +227,7 @@ const translations = {
     client: "عملائنا",
     blogs: "المدونة",
     contact: "تواصل معنا",
-    //hero
-    explore: "صمم مساحة أحلامك معنا",
+
     //work
     work: "أعمالنا",
     subWork: "أختر التصميم المناسب",
@@ -251,7 +247,7 @@ const translations = {
     pricecontent: " جودة عالية وحرفية بأسعار تنافسية",
     fast: "خدمة سريعة",
     fastcontent: "نستجيب لطلباتكم على مدار الساعة طوال أيام الأسبوع",
-    callus: "اتصل بنا",
+    callus: "تواصل معنا",
     //service
     service: "خدماتنا",
     subservice: "ما توفره شركتنا من خدمات",
@@ -330,7 +326,7 @@ function applyLanguage(lang) {
   client.textContent = translations[lang].client;
   blogs.textContent = translations[lang].blogs;
   contact.textContent = translations[lang].contact;
-  explore.textContent = translations[lang].explore;
+  
 
   work.textContent = translations[lang].work;
   subWork.textContent = translations[lang].subWork;
