@@ -3,7 +3,7 @@
 /**
  * navbar toggle ...............................................................................
  */
-
+document.addEventListener("DOMContentLoaded", () => {
 const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 const header = document.querySelector("[data-header]");
 
@@ -11,7 +11,7 @@ navToggleBtn.addEventListener("click", function () {
   this.classList.toggle("active");
   header.classList.toggle("active");
 });
-
+})
 
 
 /**
@@ -147,7 +147,7 @@ const translations = {
     work: "Our Works",
     subWork: "Choose Your Design",
     card1: "Living Room",
-    card2: "Bedroom",
+    card2: "Kitchen",
     card3: "Walkways",
     card4: "House",
     card5: "Library",
@@ -232,7 +232,7 @@ const translations = {
     work: "أعمالنا",
     subWork: "أختر التصميم المناسب",
     card1: "غرفة الجلوس",
-    card2: "غرفة نوم",
+    card2: "مطبخ",
     card3: "ممر ",
     card4: "منزل",
     card5: "مكتبة",
