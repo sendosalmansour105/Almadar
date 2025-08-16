@@ -4,13 +4,13 @@
  * navbar toggle ...............................................................................
  */
 document.addEventListener("DOMContentLoaded", () => {
-const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
-const header = document.querySelector("[data-header]");
+  const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
+  const header = document.querySelector("[data-header]");
 
-navToggleBtn.addEventListener("click", function () {
-  this.classList.toggle("active");
-  header.classList.toggle("active");
-});
+  navToggleBtn.addEventListener("click", function () {
+    this.classList.toggle("active");
+    header.classList.toggle("active");
+  });
 })
 
 
@@ -73,7 +73,7 @@ const price = document.getElementById('price');
 const pricecontent = document.getElementById('pricecontent');
 const fast = document.getElementById('fast');
 const fastcontent = document.getElementById('fastcontent');
-const callus = document.getElementById('callus');
+
 //service//
 const service = document.getElementById('service');
 const subservice = document.getElementById('subservice');
@@ -142,7 +142,7 @@ const translations = {
     client: "Our Clients",
     blogs: "Blogs",
     contact: "Contact Us",
-   
+
     //work
     work: "Our Works",
     subWork: "Choose Your Design",
@@ -162,7 +162,7 @@ const translations = {
     pricecontent: " High quality and craftsmanship at competitive prices",
     fast: "Fast service",
     fastcontent: " We respond to your requests 24/7.",
-    callus: "Contact Us",
+ 
     //service
     service: "Our services",
     subservice: "Services we provide",
@@ -213,10 +213,10 @@ const translations = {
     blogscardtitle5: "Admin",
     blogscardcontent5: "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details.",
     blogscardmore5: "Read More",
-        blogscardname6:"Jony bristow",
-    blogscardtitle6:"Admin",
-    blogscardcontent6:"A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details.",
-    blogscardmore6:"Read More",
+    blogscardname6: "Jony bristow",
+    blogscardtitle6: "Admin",
+    blogscardcontent6: "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details.",
+    blogscardmore6: "Read More",
   },
   ar: {
     langButton: 'انكليزي',
@@ -247,7 +247,7 @@ const translations = {
     pricecontent: " جودة عالية وحرفية بأسعار تنافسية",
     fast: "خدمة سريعة",
     fastcontent: "نستجيب لطلباتكم على مدار الساعة طوال أيام الأسبوع",
-    callus: "تواصل معنا",
+ 
     //service
     service: "خدماتنا",
     subservice: "ما توفره شركتنا من خدمات",
@@ -282,26 +282,26 @@ const translations = {
     blogscardtitle1: "الأدمن",
     blogscardcontent1: "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
     blogscardmore1: "تفاصيل أكثر ",
-        blogscardname2: "أحمد محمد",
+    blogscardname2: "أحمد محمد",
     blogscardtitle2: "الأدمن",
-    blogscardcontent2:  "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
-    blogscardmore2:"تفاصيل أكثر ",
-    blogscardname3:  "أحمد محمد",
+    blogscardcontent2: "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
+    blogscardmore2: "تفاصيل أكثر ",
+    blogscardname3: "أحمد محمد",
     blogscardtitle3: "الأدمن",
-    blogscardcontent3:  "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
+    blogscardcontent3: "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
     blogscardmore3: "تفاصيل أكثر ",
-    blogscardname4:  "أحمد محمد",
-    blogscardtitle4:  "الأدمن",
+    blogscardname4: "أحمد محمد",
+    blogscardtitle4: "الأدمن",
     blogscardcontent4: "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
-    blogscardmore4:"تفاصيل أكثر ",
-    blogscardname5:  "أحمد محمد",
-    blogscardtitle5:  "الأدمن",
-    blogscardcontent5:  "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
+    blogscardmore4: "تفاصيل أكثر ",
+    blogscardname5: "أحمد محمد",
+    blogscardtitle5: "الأدمن",
+    blogscardcontent5: "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
     blogscardmore5: "تفاصيل أكثر ",
-        blogscardname6: "أحمد محمد",
+    blogscardname6: "أحمد محمد",
     blogscardtitle6: "الأدمن",
     blogscardcontent6: "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
-    blogscardmore6:"تفاصيل أكثر ",
+    blogscardmore6: "تفاصيل أكثر ",
   }
 };
 
@@ -326,7 +326,7 @@ function applyLanguage(lang) {
   client.textContent = translations[lang].client;
   blogs.textContent = translations[lang].blogs;
   contact.textContent = translations[lang].contact;
-  
+
 
   work.textContent = translations[lang].work;
   subWork.textContent = translations[lang].subWork;
@@ -344,7 +344,6 @@ function applyLanguage(lang) {
   pricecontent.textContent = translations[lang].pricecontent;
   fast.textContent = translations[lang].fast;
   fastcontent.textContent = translations[lang].fastcontent;
-  callus.textContent = translations[lang].callus;
   service.textContent = translations[lang].service;
   subservice.textContent = translations[lang].subservice;
   interior.textContent = translations[lang].interior;
@@ -382,19 +381,19 @@ function applyLanguage(lang) {
   blogscardtitle2.textContent = translations[lang].blogscardtitle2;
   blogscardcontent2.textContent = translations[lang].blogscardcontent2;
   blogscardmore2.textContent = translations[lang].blogscardmore2;
-    blogscardname3.textContent = translations[lang].blogscardname3;
+  blogscardname3.textContent = translations[lang].blogscardname3;
   blogscardtitle3.textContent = translations[lang].blogscardtitle3;
   blogscardcontent3.textContent = translations[lang].blogscardcontent3;
   blogscardmore3.textContent = translations[lang].blogscardmore3;
-    blogscardname4.textContent = translations[lang].blogscardname4;
+  blogscardname4.textContent = translations[lang].blogscardname4;
   blogscardtitle4.textContent = translations[lang].blogscardtitle4;
   blogscardcontent4.textContent = translations[lang].blogscardcontent4;
   blogscardmore4.textContent = translations[lang].blogscardmore4;
-    blogscardname5.textContent = translations[lang].blogscardname5;
+  blogscardname5.textContent = translations[lang].blogscardname5;
   blogscardtitle5.textContent = translations[lang].blogscardtitle5;
   blogscardcontent5.textContent = translations[lang].blogscardcontent5;
   blogscardmore5.textContent = translations[lang].blogscardmore5;
-    blogscardname6.textContent = translations[lang].blogscardname6;
+  blogscardname6.textContent = translations[lang].blogscardname6;
   blogscardtitle6.textContent = translations[lang].blogscardtitle6;
   blogscardcontent6.textContent = translations[lang].blogscardcontent6;
   blogscardmore6.textContent = translations[lang].blogscardmore6;
