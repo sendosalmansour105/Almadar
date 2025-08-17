@@ -42,7 +42,37 @@ const observe = new IntersectionObserver((entries) => {
 const scrollscale = document.querySelectorAll('.scroll-scale')
 scrollscale.forEach((el) => observe.observe(el))
 
+// counters.............................................................................
+const counters = document.querySelectorAll(".counters span");
+const container = document.querySelector(".counters")
+let activated = false;
+window.addEventListener("scroll", () => {
+  if (pageYOffset > container.offsetTop - container.offsetHeight - 200 && activated === false) {
+    counters.forEach(counter => {
+      counter.innerHTML = 0;
+      let count = 0;
+      function updateCount() {
+        const target = parseInt(counter.dataset.count);
+        if (count < target) {
+          count++;
+          counter.innerHTML = count;
+          setTimeout(updateCount, 10)
+        } else {
+          counter.innerHTML = target;
+        }
+      }
+      updateCount();
+      activated = true;
+    });
 
+  }
+  else if (pageYOffset < container.offsetTop - container.offsetHeight - 500 || pageYOffset === 0 && activated === true) {
+    counters.forEach(counter => {
+      counter.innerText = 0;
+    });
+    activated = false;
+  }
+});
 
 // english and arabic ...................................................
 //navbar//
@@ -153,8 +183,8 @@ const translations = {
     card3: "Walkways",
     card4: "House",
     card5: "Library",
-Viewallproject:"View All Projects",
-GoToInstgram:"Go To Instgram",
+    Viewallproject: "View All Projects",
+    GoToInstgram: "Go To Instgram",
     //about
     aboutus: "About Us",
     subabout: "Explore all our works with us.",
@@ -166,7 +196,7 @@ GoToInstgram:"Go To Instgram",
     pricecontent: " High quality and craftsmanship at competitive prices",
     fast: "Fast service",
     fastcontent: " We respond to your requests 24/7.",
- 
+
     //service
     service: "Our services",
     subservice: "Services we provide",
@@ -240,8 +270,8 @@ GoToInstgram:"Go To Instgram",
     card3: "ممر ",
     card4: "منزل",
     card5: "مكتبة",
-    Viewallproject:"تصفح مشاريعنا",
-GoToInstgram:"تواصل على انستغرام",
+    Viewallproject: "تصفح مشاريعنا",
+    GoToInstgram: "تواصل على انستغرام",
     //about
     aboutus: "من نحن؟",
     subabout: "هنا نبذة عن شركتنا ",
@@ -253,7 +283,7 @@ GoToInstgram:"تواصل على انستغرام",
     pricecontent: " جودة عالية وحرفية بأسعار تنافسية",
     fast: "خدمة سريعة",
     fastcontent: "نستجيب لطلباتكم على مدار الساعة طوال أيام الأسبوع",
- 
+
     //service
     service: "خدماتنا",
     subservice: "ما توفره شركتنا من خدمات",
@@ -419,3 +449,4 @@ function applyLanguage(lang) {
     document.documentElement.lang = 'en';
   }
 }
+
