@@ -63,6 +63,8 @@ const card2 = document.getElementById('card-title-c2');
 const card3 = document.getElementById('card-title-c3');
 const card4 = document.getElementById('card-title-c4');
 const card5 = document.getElementById('card-title-c5');
+const Viewallproject = document.getElementById('Viewallproject');
+const GoToInstgram = document.getElementById('GoToInstgram');
 //about//
 const aboutus = document.getElementById('title-about');
 const subabout = document.getElementById('subabout');
@@ -151,6 +153,8 @@ const translations = {
     card3: "Walkways",
     card4: "House",
     card5: "Library",
+Viewallproject:"View All Projects",
+GoToInstgram:"Go To Instgram",
     //about
     aboutus: "About Us",
     subabout: "Explore all our works with us.",
@@ -236,6 +240,8 @@ const translations = {
     card3: "ممر ",
     card4: "منزل",
     card5: "مكتبة",
+    Viewallproject:"تصفح مشاريعنا",
+GoToInstgram:"تواصل على انستغرام",
     //about
     aboutus: "من نحن؟",
     subabout: "هنا نبذة عن شركتنا ",
@@ -335,6 +341,8 @@ function applyLanguage(lang) {
   card3.textContent = translations[lang].card3;
   card4.textContent = translations[lang].card4;
   card5.textContent = translations[lang].card5;
+  Viewallproject.textContent = translations[lang].Viewallproject;
+  GoToInstgram.textContent = translations[lang].GoToInstgram;
   aboutus.textContent = translations[lang].aboutus;
   subabout.textContent = translations[lang].subabout;
   aboutcontent.innerHTML = `${translations[lang].line1}<br/> <br/>${translations[lang].line2}`;
