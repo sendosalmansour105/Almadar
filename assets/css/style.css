@@ -52,10 +52,10 @@
   --ff-comforter-brush:'Petrov Sans-Trial', sans-serif;
   --ff-heebo:  'Petrov Sans-Trial', sans-serif;
 
-  --fs-1: 3.4rem;
-  --fs-2: 3.2rem;
-  --fs-3: 3rem;
-  --fs-4: 2.4rem;
+  --fs-1: 3rem;
+  --fs-2: 2.6rem;
+  --fs-3: 2.2rem;
+  --fs-4: 1.9rem;
   --fs-5: 1.8rem;
   --fs-6: 1.7rem;
   --fs-7: 1.4rem;
@@ -339,7 +339,7 @@ body {
 
 :is(.popular, .blog) .card-title {
   color: var(--granite-gray);
-  font-size: var(--fs-5);
+  font-size: var(--fs-7);
   margin-block: 20px;
 }
 
@@ -767,7 +767,7 @@ position: relative;
 
 .Viewallproject a {
   width: min(100%, 300px);
-  font-size: large;
+  font-size: medium;
       display: flex;
     align-items: center;
     justify-content: center;
@@ -784,7 +784,7 @@ position: relative;
       display: flex;
   align-items: center;
   justify-content: center;
-  font-size: large;
+  font-size: medium;
   border: 1px solid var(--viridian-green) ;
 }
 
