@@ -105,6 +105,9 @@ const price = document.getElementById('price');
 const pricecontent = document.getElementById('pricecontent');
 const fast = document.getElementById('fast');
 const fastcontent = document.getElementById('fastcontent');
+const projectcompleted = document.getElementById('projectcompleted');
+const clientsatisfied = document.getElementById('clientsatisfied');
+const customersatisfaction = document.getElementById('customersatisfaction');
 
 //service//
 const service = document.getElementById('service');
@@ -158,6 +161,16 @@ const blogscardname6 = document.getElementById('author-name6')
 const blogscardtitle6 = document.getElementById('author-title6')
 const blogscardcontent6 = document.getElementById('author-content6')
 const blogscardmore6 = document.getElementById('author-more6')
+//footer//
+const footertext = document.getElementById('footertext')
+const footer_links = document.getElementById('footer_links')
+const footer_home = document.getElementById('footer_home')
+const footer_works = document.getElementById('footer_works')
+const footer_aboutus = document.getElementById('footer_aboutus')
+const footer_services = document.getElementById('footer_services')
+const footer_clients = document.getElementById('footer_clients')
+const footer_contact = document.getElementById('footer_contact')
+const footer_address = document.getElementById('footer_address')
 
 
 const langButton = document.getElementById('langBtn');
@@ -196,7 +209,9 @@ const translations = {
     pricecontent: " High quality and craftsmanship at competitive prices",
     fast: "Fast service",
     fastcontent: " We respond to your requests 24/7.",
-
+    projectcompleted: "Projects Completed",
+    clientsatisfied: "Clients",
+    customersatisfaction: "Customer satisfaction",
     //service
     service: "Our services",
     subservice: "Services we provide",
@@ -251,6 +266,16 @@ const translations = {
     blogscardtitle6: "Admin",
     blogscardcontent6: "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details.",
     blogscardmore6: "Read More",
+    //footer
+    footertext:"Our designs save you time and give you convenience.",
+    footer_links:"Links",
+    footer_home:"Home",
+    footer_works:"Works",
+    footer_aboutus:"About us",
+    footer_services:"Services",
+    footer_clients:"Clients",
+    footer_contact:"Counact",
+    footer_address:"United Arab Emirates, Dubai",
   },
   ar: {
     langButton: 'انكليزي',
@@ -283,7 +308,9 @@ const translations = {
     pricecontent: " جودة عالية وحرفية بأسعار تنافسية",
     fast: "خدمة سريعة",
     fastcontent: "نستجيب لطلباتكم على مدار الساعة طوال أيام الأسبوع",
-
+    projectcompleted: "المشاريع المنجزة",
+    clientsatisfied: "العملاء",
+    customersatisfaction: "رضا العملاء",
     //service
     service: "خدماتنا",
     subservice: "ما توفره شركتنا من خدمات",
@@ -338,6 +365,16 @@ const translations = {
     blogscardtitle6: "الأدمن",
     blogscardcontent6: "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
     blogscardmore6: "تفاصيل أكثر ",
+        //footer
+    footertext:" تصاميمنا توفر لك الوقت والراحة",
+    footer_links:"روابط",
+    footer_home:"الصفحة الرئيسة",
+    footer_works:"أعمالنا",
+    footer_aboutus:"حول شركتنا",
+    footer_services:"خدماتنا",
+    footer_clients:"عملاؤنا",
+    footer_contact:"تواصل معنا عبر",
+    footer_address:"الامارات العربية , دبي",
   }
 };
 
@@ -382,6 +419,10 @@ function applyLanguage(lang) {
   pricecontent.textContent = translations[lang].pricecontent;
   fast.textContent = translations[lang].fast;
   fastcontent.textContent = translations[lang].fastcontent;
+  projectcompleted.textContent = translations[lang].projectcompleted;
+  clientsatisfied.textContent = translations[lang].clientsatisfied;
+  customersatisfaction.textContent = translations[lang].customersatisfaction;
+  
   service.textContent = translations[lang].service;
   subservice.textContent = translations[lang].subservice;
   interior.textContent = translations[lang].interior;
@@ -435,17 +476,29 @@ function applyLanguage(lang) {
   blogscardtitle6.textContent = translations[lang].blogscardtitle6;
   blogscardcontent6.textContent = translations[lang].blogscardcontent6;
   blogscardmore6.textContent = translations[lang].blogscardmore6;
+  footertext.textContent = translations[lang].footertext;
+  footer_links.textContent = translations[lang].footer_links;
+  footer_home.textContent = translations[lang].footer_home;
+  footer_works.textContent = translations[lang].footer_works;
+  footer_aboutus.textContent = translations[lang].footer_aboutus;
+  footer_services.textContent = translations[lang].footer_services;
+  footer_clients.textContent = translations[lang].footer_clients;
+  footer_contact.textContent = translations[lang].footer_contact;
+  footer_address.textContent = translations[lang].footer_address;
 
 
 
 
   if (lang === 'ar') {
     body.classList.add('rtl');
-    body.classList.add('arabicFont')
+    body.classList.add('arabicFont');
+
     document.documentElement.lang = 'ar';
   } else {
     body.classList.remove('rtl');
     body.classList.remove('arabicFont')
+
+
     document.documentElement.lang = 'en';
   }
 }

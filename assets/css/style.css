@@ -710,16 +710,8 @@ body {
   grid-template-columns: repeat(3 , 1fr);
   gap: 4em 2em;
 }
-.counter:not(:last-child)::before{
-  content: "";
-  background: #4b4f4d;
-  position: absolute;
-  width: 2px;
-  height: 4em;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -1em;
-}
+
+
 .counter{
 position: relative;
 }
