@@ -172,6 +172,8 @@ const footer_clients = document.getElementById('footer_clients')
 const footer_contact = document.getElementById('footer_contact')
 const footer_address = document.getElementById('footer_address')
 
+/////////////////////////////
+
 
 const langButton = document.getElementById('langBtn');
 const body = document.body;
@@ -267,15 +269,17 @@ const translations = {
     blogscardcontent6: "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details.",
     blogscardmore6: "Read More",
     //footer
-    footertext:"Our designs save you time and give you convenience.",
-    footer_links:"Links",
-    footer_home:"Home",
-    footer_works:"Works",
-    footer_aboutus:"About us",
-    footer_services:"Services",
-    footer_clients:"Clients",
-    footer_contact:"Counact",
-    footer_address:"United Arab Emirates, Dubai",
+    footertext: "Our designs save you time and give you convenience.",
+    footer_links: "Links",
+    footer_home: "Home",
+    footer_works: "Works",
+    footer_aboutus: "About us",
+    footer_services: "Services",
+    footer_clients: "Clients",
+    footer_contact: "Counact",
+    footer_address: "United Arab Emirates, Dubai",
+  
+   
   },
   ar: {
     langButton: 'انكليزي',
@@ -365,16 +369,17 @@ const translations = {
     blogscardtitle6: "الأدمن",
     blogscardcontent6: "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
     blogscardmore6: "تفاصيل أكثر ",
-        //footer
-    footertext:" تصاميمنا توفر لك الوقت والراحة",
-    footer_links:"روابط",
-    footer_home:"الصفحة الرئيسة",
-    footer_works:"أعمالنا",
-    footer_aboutus:"حول شركتنا",
-    footer_services:"خدماتنا",
-    footer_clients:"عملاؤنا",
-    footer_contact:"تواصل معنا عبر",
-    footer_address:"الامارات العربية , دبي",
+    //footer
+    footertext: " تصاميمنا توفر لك الوقت والراحة",
+    footer_links: "روابط",
+    footer_home: "الصفحة الرئيسة",
+    footer_works: "أعمالنا",
+    footer_aboutus: "حول شركتنا",
+    footer_services: "خدماتنا",
+    footer_clients: "عملاؤنا",
+    footer_contact: "تواصل معنا عبر",
+    footer_address: "الامارات العربية , دبي",
+
   }
 };
 
@@ -422,7 +427,7 @@ function applyLanguage(lang) {
   projectcompleted.textContent = translations[lang].projectcompleted;
   clientsatisfied.textContent = translations[lang].clientsatisfied;
   customersatisfaction.textContent = translations[lang].customersatisfaction;
-  
+
   service.textContent = translations[lang].service;
   subservice.textContent = translations[lang].subservice;
   interior.textContent = translations[lang].interior;
@@ -485,7 +490,7 @@ function applyLanguage(lang) {
   footer_clients.textContent = translations[lang].footer_clients;
   footer_contact.textContent = translations[lang].footer_contact;
   footer_address.textContent = translations[lang].footer_address;
-
+  
 
 
 
