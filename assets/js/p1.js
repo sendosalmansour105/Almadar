@@ -1,4 +1,72 @@
-'use strict';
+// p.js
+(() => {
+  'use strict';
+
+  // عناصر الصفحة
+  const projects = document.getElementById('title-projects');
+  const all = document.getElementById('title-all');
+  const kitchen = document.getElementById('title-kitchen');
+  const bedroom = document.getElementById('title-bedroom');
+  const bathroom = document.getElementById('title-bathroom');
+  const halls = document.getElementById('title-halls');
+  const mandf = document.getElementById('title-mandf');
+  const restaurant = document.getElementById('title-restaurant');
+
+  // الترجمات
+  const translations = {
+    en: {
+      projects: "Our Projects",
+      all:"Show All",
+      kitchen: "Kitchen",
+      bedroom: "Bedroom",
+      bathroom: "Bathroom",
+      halls: "Halls",
+      mandf: "M & F",
+      restaurant: "Restaurant"
+    },
+    ar: {
+      projects: "مشاريعنا",
+      all:"الكل",
+      kitchen: "المطبخ",
+      bedroom: "غرفة نوم",
+      bathroom: "الحمام",
+      halls: "الصالات",
+      mandf: "رجال و نساء",
+      restaurant: "المطعم"
+    }
+  };
+
+  // دالة تطبيق اللغة
+  function applyPLanguage() {
+    const lang = localStorage.getItem('lang') || 'ar';
+    const T = translations[lang];
+
+    if (projects) projects.textContent = T.projects;
+    if (all) all.textContent = T.all;
+    if (kitchen) kitchen.textContent = T.kitchen;
+    if (bedroom) bedroom.textContent = T.bedroom;
+    if (bathroom) bathroom.textContent = T.bathroom;
+    if (halls) halls.textContent = T.halls;
+    if (mandf) mandf.textContent = T.mandf;
+    if (restaurant) restaurant.textContent = T.restaurant;
+
+    // اتجاه الصفحة
+    document.documentElement.lang = lang;
+    document.body.dir = (lang === "ar") ? "rtl" : "ltr";
+    if (lang === 'ar') {
+    body.classList.add('rtl', 'arabicFont');
+    body.dir = 'rtl';
+  } else {
+    body.classList.remove('rtl', 'arabicFont');
+    body.dir = 'ltr';
+  }
+  }
+
+  // نفّذ عند تحميل الصفحة
+  document.addEventListener('DOMContentLoaded', applyPLanguage);
+})();
+
+
 // show items .................................................................................
 
 

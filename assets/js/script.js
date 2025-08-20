@@ -1,46 +1,23 @@
 'use strict';
 
-/**
- * navbar toggle ...............................................................................
- */
-document.addEventListener("DOMContentLoaded", () => {
-  const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
-  const header = document.querySelector("[data-header]");
-
+/** ================== NAVBAR TOGGLE ================== */
+const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
+const header = document.querySelector("[data-header]");
+if (navToggleBtn && header) {
   navToggleBtn.addEventListener("click", function () {
     this.classList.toggle("active");
     header.classList.toggle("active");
   });
-})
+}
 
-
-/**
- * show go top btn when scroll window to 500px .......................................................
- */
-
+/** ================== GO TOP BTN ================== */
 const goTopBtn = document.querySelector("[data-go-top]");
-
-window.addEventListener("scroll", function () {
-  window.scrollY >= 500 ? goTopBtn.classList.add("active")
-    : goTopBtn.classList.remove("active");
-});
-
-
-// show items .................................................................................
-
-const observe = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show-items')
-    }
-    else {
-      entry.target.classList.remove('show-items')
-    }
-  })
-})
-
-const scrollscale = document.querySelectorAll('.scroll-scale')
-scrollscale.forEach((el) => observe.observe(el))
+if (goTopBtn) {
+  window.addEventListener("scroll", function () {
+    if (window.scrollY >= 500) goTopBtn.classList.add("active");
+    else goTopBtn.classList.remove("active");
+  });
+}
 
 // counters.............................................................................
 const counters = document.querySelectorAll(".counters span");
@@ -74,8 +51,20 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// english and arabic ...................................................
-//navbar//
+/** ================== INTERSECTION OBSERVER ================== */
+const observe = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) entry.target.classList.add('show-items');
+    else entry.target.classList.remove('show-items');
+  });
+});
+document.querySelectorAll('.scroll-scale').forEach((el) => observe.observe(el));
+
+/** ================== HELPERS ================== */
+const setText = (el, val) => { if (el) el.textContent = val; };
+const setHTML = (el, val) => { if (el) el.innerHTML = val; };
+
+/** ================== SELECT ELEMENTS ================== */
 const home = document.getElementById('navbar-Home');
 const works = document.getElementById('navbar-work');
 const about = document.getElementById('navbar-about');
@@ -84,8 +73,7 @@ const client = document.getElementById('navbar-clients');
 const blogs = document.getElementById('navbar-blogs');
 const contact = document.getElementById('navbar-contact');
 
-
-//works//
+// works
 const work = document.getElementById('title-work');
 const subWork = document.getElementById('subWork');
 const card1 = document.getElementById('card-title-c1');
@@ -95,7 +83,7 @@ const card4 = document.getElementById('card-title-c4');
 const card5 = document.getElementById('card-title-c5');
 const Viewallproject = document.getElementById('Viewallproject');
 const GoToInstgram = document.getElementById('GoToInstgram');
-//about//
+// about
 const aboutus = document.getElementById('title-about');
 const subabout = document.getElementById('subabout');
 const aboutcontent = document.getElementById('about-content');
@@ -105,11 +93,11 @@ const price = document.getElementById('price');
 const pricecontent = document.getElementById('pricecontent');
 const fast = document.getElementById('fast');
 const fastcontent = document.getElementById('fastcontent');
+const callus = document.getElementById('callus');
 const projectcompleted = document.getElementById('projectcompleted');
 const clientsatisfied = document.getElementById('clientsatisfied');
 const customersatisfaction = document.getElementById('customersatisfaction');
-
-//service//
+// service
 const service = document.getElementById('service');
 const subservice = document.getElementById('subservice');
 const interior = document.getElementById('interiorservice');
@@ -121,46 +109,43 @@ const exteriorcontent = document.getElementById('exteriorcontent');
 const landscape = document.getElementById('landscapeservice');
 const landscapetitle = document.getElementById('landscapetitle');
 const landscapecontent = document.getElementById('landscapecontent');
-//clients//
+
+// clients
 const clients = document.getElementById('clients');
 const subclients = document.getElementById('subclients');
-//details//
+
+// details
 const details = document.getElementById('details');
 const subDetails = document.getElementById('subDetails');
-const detailscontent = document.getElementById('detailscontent')
-//blogs//
+const detailscontent = document.getElementById('detailscontent');
+
+// blogs
 const blog = document.getElementById('blogs');
 const subblogs = document.getElementById('subblogs');
-// card1 
-const blogscardname1 = document.getElementById('author-name1')
-const blogscardtitle1 = document.getElementById('author-title1')
-const blogscardcontent1 = document.getElementById('author-content1')
-const blogscardmore1 = document.getElementById('author-more1')
-// card2
-const blogscardname2 = document.getElementById('author-name2')
-const blogscardtitle2 = document.getElementById('author-title2')
-const blogscardcontent2 = document.getElementById('author-content2')
-const blogscardmore2 = document.getElementById('author-more2')
-// card3 
-const blogscardname3 = document.getElementById('author-name3')
-const blogscardtitle3 = document.getElementById('author-title3')
-const blogscardcontent3 = document.getElementById('author-content3')
-const blogscardmore3 = document.getElementById('author-more3')
-// card4 
-const blogscardname4 = document.getElementById('author-name4')
-const blogscardtitle4 = document.getElementById('author-title4')
-const blogscardcontent4 = document.getElementById('author-content4')
-const blogscardmore4 = document.getElementById('author-more4')
-// card5
-const blogscardname5 = document.getElementById('author-name5')
-const blogscardtitle5 = document.getElementById('author-title5')
-const blogscardcontent5 = document.getElementById('author-content5')
-const blogscardmore5 = document.getElementById('author-more5')
-// card6 
-const blogscardname6 = document.getElementById('author-name6')
-const blogscardtitle6 = document.getElementById('author-title6')
-const blogscardcontent6 = document.getElementById('author-content6')
-const blogscardmore6 = document.getElementById('author-more6')
+const blogscardname1 = document.getElementById('author-name1');
+const blogscardtitle1 = document.getElementById('author-title1');
+const blogscardcontent1 = document.getElementById('author-content1');
+const blogscardmore1 = document.getElementById('author-more1');
+const blogscardname2 = document.getElementById('author-name2');
+const blogscardtitle2 = document.getElementById('author-title2');
+const blogscardcontent2 = document.getElementById('author-content2');
+const blogscardmore2 = document.getElementById('author-more2');
+const blogscardname3 = document.getElementById('author-name3');
+const blogscardtitle3 = document.getElementById('author-title3');
+const blogscardcontent3 = document.getElementById('author-content3');
+const blogscardmore3 = document.getElementById('author-more3');
+const blogscardname4 = document.getElementById('author-name4');
+const blogscardtitle4 = document.getElementById('author-title4');
+const blogscardcontent4 = document.getElementById('author-content4');
+const blogscardmore4 = document.getElementById('author-more4');
+const blogscardname5 = document.getElementById('author-name5');
+const blogscardtitle5 = document.getElementById('author-title5');
+const blogscardcontent5 = document.getElementById('author-content5');
+const blogscardmore5 = document.getElementById('author-more5');
+const blogscardname6 = document.getElementById('author-name6');
+const blogscardtitle6 = document.getElementById('author-title6');
+const blogscardcontent6 = document.getElementById('author-content6');
+const blogscardmore6 = document.getElementById('author-more6');
 //footer//
 const footertext = document.getElementById('footertext')
 const footer_links = document.getElementById('footer_links')
@@ -171,17 +156,15 @@ const footer_services = document.getElementById('footer_services')
 const footer_clients = document.getElementById('footer_clients')
 const footer_contact = document.getElementById('footer_contact')
 const footer_address = document.getElementById('footer_address')
-
-/////////////////////////////
-
+const number = document.getElementById('number')
 
 const langButton = document.getElementById('langBtn');
 const body = document.body;
 
-// تعريف العبارات باللغتين
+/** ================== TRANSLATIONS ================== */
 const translations = {
   en: {
-    langButton: 'Arabic',
+    langButton: 'عربي',
     home: "Home",
     works: "Our Works",
     about: "About Us",
@@ -278,19 +261,18 @@ const translations = {
     footer_clients: "Clients",
     footer_contact: "Counact",
     footer_address: "United Arab Emirates, Dubai",
-  
-   
+number:"+971508853854",
+
   },
   ar: {
-    langButton: 'انكليزي',
-    home: "الصفحة الرئيسة",
+    langButton: 'English',
+   home: "الصفحة الرئيسة",
     works: "أعمالنا",
     about: "حول شركتنا",
     services: "خدماتنا",
     client: "عملائنا",
     blogs: "المدونة",
     contact: "تواصل معنا",
-
     //work
     work: "أعمالنا",
     subWork: "أختر التصميم المناسب",
@@ -368,7 +350,7 @@ const translations = {
     blogscardname6: "أحمد محمد",
     blogscardtitle6: "الأدمن",
     blogscardcontent6: "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
-    blogscardmore6: "تفاصيل أكثر ",
+  blogscardmore6: "تفاصيل أكثر ",
     //footer
     footertext: " تصاميمنا توفر لك الوقت والراحة",
     footer_links: "روابط",
@@ -379,132 +361,128 @@ const translations = {
     footer_clients: "عملاؤنا",
     footer_contact: "تواصل معنا عبر",
     footer_address: "الامارات العربية , دبي",
-
+number:"971508853854+"
   }
 };
 
-// استرجاع اللغة من localStorage أو ضبطها على الإنجليزية
+/** ================== LANGUAGE APPLY ================== */
 let currentLang = localStorage.getItem('lang') || 'en';
 applyLanguage(currentLang);
 
-// دالة تبديل اللغة
 function toggleLanguage() {
   currentLang = currentLang === 'en' ? 'ar' : 'en';
   localStorage.setItem('lang', currentLang);
   applyLanguage(currentLang);
 }
 
-// دالة لتطبيق اللغة على الصفحة
 function applyLanguage(lang) {
-  langButton.textContent = translations[lang].langButton;
-  home.textContent = translations[lang].home;
-  works.textContent = translations[lang].works;
-  about.textContent = translations[lang].about;
-  services.textContent = translations[lang].services;
-  client.textContent = translations[lang].client;
-  blogs.textContent = translations[lang].blogs;
-  contact.textContent = translations[lang].contact;
+  const T = translations[lang];
+  if (!T) return;
 
+  if (langButton) setText(langButton, T.langButton);
 
-  work.textContent = translations[lang].work;
-  subWork.textContent = translations[lang].subWork;
-  card1.textContent = translations[lang].card1;
-  card2.textContent = translations[lang].card2;
-  card3.textContent = translations[lang].card3;
-  card4.textContent = translations[lang].card4;
-  card5.textContent = translations[lang].card5;
-  Viewallproject.textContent = translations[lang].Viewallproject;
-  GoToInstgram.textContent = translations[lang].GoToInstgram;
-  aboutus.textContent = translations[lang].aboutus;
-  subabout.textContent = translations[lang].subabout;
-  aboutcontent.innerHTML = `${translations[lang].line1}<br/> <br/>${translations[lang].line2}`;
-  designs.textContent = translations[lang].designs;
-  designscontent.textContent = translations[lang].designscontent;
-  price.textContent = translations[lang].price;
-  pricecontent.textContent = translations[lang].pricecontent;
-  fast.textContent = translations[lang].fast;
-  fastcontent.textContent = translations[lang].fastcontent;
-  projectcompleted.textContent = translations[lang].projectcompleted;
-  clientsatisfied.textContent = translations[lang].clientsatisfied;
-  customersatisfaction.textContent = translations[lang].customersatisfaction;
+  setText(home, T.home);
+  setText(works, T.works);
+  setText(about, T.about);
+  setText(services, T.services);
+  setText(client, T.client);
+  setText(blogs, T.blogs);
+  setText(contact, T.contact);
 
-  service.textContent = translations[lang].service;
-  subservice.textContent = translations[lang].subservice;
-  interior.textContent = translations[lang].interior;
-  interiortitle.textContent = translations[lang].interiortitle;
-  interiorcontent.textContent = translations[lang].interiorcontent;
-  exterior.textContent = translations[lang].exterior;
-  exteriortitle.textContent = translations[lang].exteriortitle;
-  exteriorcontent.textContent = translations[lang].exteriorcontent;
-  landscape.textContent = translations[lang].landscape;
-  landscapetitle.textContent = translations[lang].landscapetitle;
-  landscapecontent.textContent = translations[lang].landscapecontent;
-  clients.textContent = translations[lang].clients;
-  subclients.textContent = translations[lang].subclients;
-  details.textContent = translations[lang].details;
-  subDetails.textContent = translations[lang].subDetails;
-  detailscontent.innerHTML = `${translations[lang].de1}<br/>
-                                 ${translations[lang].de2}<br/>
-                                ${translations[lang].de3}<br/><br/>
-                                ${translations[lang].de4}<br/>
-                                ${translations[lang].de5}<br/>
-                                ${translations[lang].de6}<br/>
-                                ${translations[lang].de7}<br/><br/>
-                                 ${translations[lang].de8}<br/><br/>
-                                  ${translations[lang].de9}<br/>
+  setText(work, T.work);
+  setText(subWork, T.subWork);
+  setText(card1, T.card1);
+  setText(card2, T.card2);
+  setText(card3, T.card3);
+  setText(card4, T.card4);
+  setText(card5, T.card5);
+  setText(Viewallproject, T.Viewallproject);
+  setText(GoToInstgram, T.GoToInstgram);
+  setText(projectcompleted, T.projectcompleted);
+  setText(clientsatisfied, T.clientsatisfied);
+  setText(customersatisfaction, T.customersatisfaction);
+  setText(aboutus, T.aboutus);
+  setText(subabout, T.subabout);
+  setHTML(aboutcontent, `${T.line1}<br/><br/>${T.line2}`);
+  setText(designs, T.designs);
+  setText(designscontent, T.designscontent);
+  setText(price, T.price);
+  setText(pricecontent, T.pricecontent);
+  setText(fast, T.fast);
+  setText(fastcontent, T.fastcontent);
+  setText(callus, T.callus);
 
+  setText(service, T.service);
+  setText(subservice, T.subservice);
+  setText(interior, T.interior);
+  setText(interiortitle, T.interiortitle);
+  setText(interiorcontent, T.interiorcontent);
+  setText(exterior, T.exterior);
+  setText(exteriortitle, T.exteriortitle);
+  setText(exteriorcontent, T.exteriorcontent);
+  setText(landscape, T.landscape);
+  setText(landscapetitle, T.landscapetitle);
+  setText(landscapecontent, T.landscapecontent);
 
-  `
-  blog.textContent = translations[lang].blog;
-  subblogs.textContent = translations[lang].subblogs;
-  blogscardname1.textContent = translations[lang].blogscardname1;
-  blogscardtitle1.textContent = translations[lang].blogscardtitle1;
-  blogscardcontent1.textContent = translations[lang].blogscardcontent1;
-  blogscardmore1.textContent = translations[lang].blogscardmore1;
-  blogscardname2.textContent = translations[lang].blogscardname2;
-  blogscardtitle2.textContent = translations[lang].blogscardtitle2;
-  blogscardcontent2.textContent = translations[lang].blogscardcontent2;
-  blogscardmore2.textContent = translations[lang].blogscardmore2;
-  blogscardname3.textContent = translations[lang].blogscardname3;
-  blogscardtitle3.textContent = translations[lang].blogscardtitle3;
-  blogscardcontent3.textContent = translations[lang].blogscardcontent3;
-  blogscardmore3.textContent = translations[lang].blogscardmore3;
-  blogscardname4.textContent = translations[lang].blogscardname4;
-  blogscardtitle4.textContent = translations[lang].blogscardtitle4;
-  blogscardcontent4.textContent = translations[lang].blogscardcontent4;
-  blogscardmore4.textContent = translations[lang].blogscardmore4;
-  blogscardname5.textContent = translations[lang].blogscardname5;
-  blogscardtitle5.textContent = translations[lang].blogscardtitle5;
-  blogscardcontent5.textContent = translations[lang].blogscardcontent5;
-  blogscardmore5.textContent = translations[lang].blogscardmore5;
-  blogscardname6.textContent = translations[lang].blogscardname6;
-  blogscardtitle6.textContent = translations[lang].blogscardtitle6;
-  blogscardcontent6.textContent = translations[lang].blogscardcontent6;
-  blogscardmore6.textContent = translations[lang].blogscardmore6;
-  footertext.textContent = translations[lang].footertext;
-  footer_links.textContent = translations[lang].footer_links;
-  footer_home.textContent = translations[lang].footer_home;
-  footer_works.textContent = translations[lang].footer_works;
-  footer_aboutus.textContent = translations[lang].footer_aboutus;
-  footer_services.textContent = translations[lang].footer_services;
-  footer_clients.textContent = translations[lang].footer_clients;
-  footer_contact.textContent = translations[lang].footer_contact;
-  footer_address.textContent = translations[lang].footer_address;
-  
+  setText(clients, T.clients);
+  setText(subclients, T.subclients);
 
+  setText(details, T.details);
+  setText(subDetails, T.subDetails);
+  setHTML(detailscontent, `${T.de1}<br/>${T.de2}<br/>${T.de3}<br/><br/>${T.de4}<br/>${T.de5}<br/>${T.de6}<br/>${T.de7}<br/><br/>${T.de8}<br/><br/>${T.de9}<br/>`);
 
+  setText(blog, T.blog);
+  setText(subblogs, T.subblogs);
 
-  if (lang === 'ar') {
-    body.classList.add('rtl');
-    body.classList.add('arabicFont');
+  setText(blogscardname1, T.blogscardname1);
+  setText(blogscardtitle1, T.blogscardtitle1);
+  setText(blogscardcontent1, T.blogscardcontent1);
+  setText(blogscardmore1, T.blogscardmore1);
 
-    document.documentElement.lang = 'ar';
+  setText(blogscardname2, T.blogscardname2);
+  setText(blogscardtitle2, T.blogscardtitle2);
+  setText(blogscardcontent2, T.blogscardcontent2);
+  setText(blogscardmore2, T.blogscardmore2);
+
+  setText(blogscardname3, T.blogscardname3);
+  setText(blogscardtitle3, T.blogscardtitle3);
+  setText(blogscardcontent3, T.blogscardcontent3);
+  setText(blogscardmore3, T.blogscardmore3);
+
+  setText(blogscardname4, T.blogscardname4);
+  setText(blogscardtitle4, T.blogscardtitle4);
+  setText(blogscardcontent4, T.blogscardcontent4);
+  setText(blogscardmore4, T.blogscardmore4);
+
+  setText(blogscardname5, T.blogscardname5);
+  setText(blogscardtitle5, T.blogscardtitle5);
+  setText(blogscardcontent5, T.blogscardcontent5);
+  setText(blogscardmore5, T.blogscardmore5);
+
+  setText(blogscardname6, T.blogscardname6);
+  setText(blogscardtitle6, T.blogscardtitle6);
+  setText(blogscardcontent6, T.blogscardcontent6);
+  setText(blogscardmore6, T.blogscardmore6);
+
+   setText(footertext,T.footertext)
+   setText( footer_links,T.footer_links)
+   setText(footer_home,T.footer_home)
+   setText(footer_works,T.footer_works)
+   setText(footer_aboutus,T.footer_aboutus)
+   setText(footer_services,T.footer_services)
+   setText(footer_clients,T.footer_clients)
+   setText(footer_contact,T.footer_contact)
+   setText(footer_address,T.footer_address)
+   setText(number,T.number)
+
+  // الاتجاه
+  document.documentElement.lang = lang;
+  body.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+      if (lang === 'ar') {
+    body.classList.add('rtl', 'arabicFont');
+    body.dir = 'rtl';
   } else {
-    body.classList.remove('rtl');
-    body.classList.remove('arabicFont')
-
-
-    document.documentElement.lang = 'en';
+    body.classList.remove('rtl', 'arabicFont');
+    body.dir = 'ltr';
   }
 }
-
