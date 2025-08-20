@@ -17,22 +17,22 @@
     en: {
       projects: "Our Projects",
       all:"Show All",
-      kitchen: "Kitchen",
-      bedroom: "Bedroom",
-      bathroom: "Bathroom",
+      kitchen: "Kitchens",
+      bedroom: "Bedrooms",
+      bathroom: "Bathrooms",
       halls: "Halls",
-      mandf: "M & F",
-      restaurant: "Restaurant"
+      mandf: "Male and Female Halls",
+      restaurant: "Restaurants and Cafe"
     },
     ar: {
       projects: "مشاريعنا",
       all:"الكل",
-      kitchen: "المطبخ",
-      bedroom: "غرفة نوم",
-      bathroom: "الحمام",
+      kitchen: "المطابخ",
+      bedroom: "غرف النوم",
+      bathroom: "الحمامات",
       halls: "الصالات",
-      mandf: "رجال و نساء",
-      restaurant: "المطعم"
+      mandf: "صالات للرجال و نساء ",
+      restaurant: "مطاعم ومقاهي"
     }
   };
 
