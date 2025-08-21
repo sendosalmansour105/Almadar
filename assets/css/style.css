@@ -48,9 +48,9 @@
    * typography
    */
 
-  --ff-abril-fatface:'Petrov Sans-Trial', sans-serif;
-  --ff-comforter-brush:'Petrov Sans-Trial', sans-serif;
-  --ff-heebo:  'Petrov Sans-Trial', sans-serif;
+  --ff-abril-fatface: 'Petrov Sans-Trial', sans-serif;
+  --ff-comforter-brush: 'Petrov Sans-Trial', sans-serif;
+  --ff-heebo: 'Petrov Sans-Trial', sans-serif;
 
   --fs-1: 3rem;
   --fs-2: 2.6rem;
@@ -77,7 +77,7 @@
    */
 
   --section-padding: 40px;
-  
+
 
   /**
    * transition
@@ -150,7 +150,7 @@ address {
 }
 
 html {
- font-family: 'Petrov Sans-Trial', sans-serif;
+  font-family: 'Petrov Sans-Trial', sans-serif;
   font-size: 10px;
   scroll-behavior: smooth;
   max-width: 100%;
@@ -159,7 +159,7 @@ html {
 
 body {
   background: var(--white-1);
- 
+
   font-size: 1.6rem;
   direction: ltr;
   transition: all 0.3s ease;
@@ -697,25 +697,27 @@ body {
 
 }
 
-.counters{
+.counters {
   padding: 3em 2em;
   background: #fff;
   color: #4b4f4d;
   text-align: center;
 }
-.counters > div{
+
+.counters>div {
   max-width: 900px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3 , 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 4em 2em;
 }
 
 
-.counter{
-position: relative;
+.counter {
+  position: relative;
 }
-.counter h1{
+
+.counter h1 {
   font-size: 2em;
   margin-bottom: 0.5em;
 }
@@ -749,12 +751,13 @@ position: relative;
 }
 
 
-.buttonsforProjects{
+.buttonsforProjects {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
 }
+
 .Viewallproject {
   width: 25%;
   /* align-items: center; */
@@ -768,10 +771,11 @@ position: relative;
 .Viewallproject a {
   width: min(100%, 300px);
   font-size: medium;
-      display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .Gotoinstagram {
   width: 25%;
   /* align-items: center; */
@@ -781,11 +785,11 @@ position: relative;
 
 .Gotoinstagram a {
   width: min(100%, 300px);
-      display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-size: medium;
-  border: 1px solid var(--viridian-green) ;
+  border: 1px solid var(--viridian-green);
 }
 
 
@@ -830,6 +834,8 @@ position: relative;
   perspective: 100px;
   padding: 15px;
 }
+
+/* map  ----------------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*\
   #BLOG
@@ -885,10 +891,14 @@ position: relative;
 
 }
 
-.footer-top { padding: 10px; }
+.footer-top {
+  padding: 10px;
+}
 
 .footer-text,
-.footer-list-title { color: var(--white-1); }
+.footer-list-title {
+  color: var(--white-1);
+}
 
 .footer-text {
   font-size: var(--fs-4);
@@ -908,7 +918,9 @@ position: relative;
   transition: 0.25s ease;
 }
 
-.footer-link:is(:hover, :focus) { color: var(--mikado-yellow); }
+.footer-link:is(:hover, :focus) {
+  color: var(--mikado-yellow);
+}
 
 .footer-list-item {
   display: flex;
@@ -922,20 +934,28 @@ position: relative;
   color: var(--white-1);
 }
 
-.footer-list-item .footer-link { margin-block-start: 0; }
+.footer-list-item .footer-link {
+  margin-block-start: 0;
+}
 
-.footer-list-item :is(.footer-link, .address) { font-size: var(--fs-7); }
+.footer-list-item :is(.footer-link, .address) {
+  font-size: var(--fs-7);
+}
 
-.footer-list-item .footer-link:is(:hover, :focus) { color: var(--mikado-yellow); }
+.footer-list-item .footer-link:is(:hover, :focus) {
+  color: var(--mikado-yellow);
+}
 
 .footer-bottom {
   border-block-start: 1px solid #fff;
   padding-block: 30px;
   text-align: center;
 }
-.footer-bottom .copyright{
+
+.footer-bottom .copyright {
   color: var(--battleship-gray);
 }
+
 .social-list {
   display: flex;
   justify-content: center;
@@ -1095,7 +1115,7 @@ position: relative;
   }
 
 
- /**
+  /**
    * FOOTER
    */
 
@@ -1105,7 +1125,9 @@ position: relative;
     align-items: center;
   }
 
-  .social-list { margin-block-start: 0; }
+  .social-list {
+    margin-block-start: 0;
+  }
 
 
 }
@@ -1188,7 +1210,7 @@ position: relative;
   }
 
   .navbar-link {
-   
+
     margin-bottom: 8px;
   }
 
@@ -1276,11 +1298,14 @@ position: relative;
    * FOOTER
    */
 
-  .footer-top { 
+  .footer-top {
     display: grid;
-    grid-template-columns: 1fr 0.4fr 0.4fr ; }
+    grid-template-columns: 1fr 0.4fr 0.4fr;
+  }
 
-  .footer-text { margin-inline-end: 80px; }
+  .footer-text {
+    margin-inline-end: 80px;
+  }
 }
 
 /**
@@ -1316,42 +1341,50 @@ position: relative;
   .contactus a {
     width: 55%;
   }
-  .buttonsforProjects{
+
+  .buttonsforProjects {
     display: flex;
     flex-direction: column;
   }
-   .Viewallproject{
+
+  .Viewallproject {
     width: 100%;
-   }
-  .Viewallproject a{
+  }
+
+  .Viewallproject a {
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-    .Gotoinstagram{
+
+  .Gotoinstagram {
     width: 100%;
-   }
-  .Gotoinstagram a{
+  }
+
+  .Gotoinstagram a {
     width: 90%;
-        display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
-  .counter h1{
-  font-size: 1em;
-  }
-    .counter h3{
-  font-size: smaller;
-  }
-  .about-text,
-.about-item-text {
-  font-size: var(--fs-7);
-}
 
-.footer .container{
-  padding: 8px;
-}
+  .counter h1 {
+    font-size: 1em;
+  }
+
+  .counter h3 {
+    font-size: smaller;
+  }
+
+  .about-text,
+  .about-item-text {
+    font-size: var(--fs-7);
+  }
+
+  .footer .container {
+    padding: 8px;
+  }
 }
 
 
@@ -1500,5 +1533,3 @@ position: relative;
   opacity: 1;
   visibility: visible;
 }
-
-
