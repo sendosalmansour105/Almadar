@@ -133,6 +133,13 @@ const subclients = document.getElementById('subclients');
 const details = document.getElementById('details');
 const subDetails = document.getElementById('subDetails');
 const detailscontent = document.getElementById('detailscontent');
+//map 
+const loc = document.getElementById('loc');
+const loccontent = document.getElementById('loccontent');
+const Yearsofworks = document.getElementById('Yearsofworks');
+const countries = document.getElementById('countries');
+const equippedapartments = document.getElementById('equippedapartments');
+
 
 // blogs
 const blog = document.getElementById('blogs');
@@ -239,6 +246,12 @@ const translations = {
     de7: " Interior and exterior designs that reflect your style, whether modern, classic, or anything in between.<br>",
     de8: "From cozy homes to commercial landmarks, Al-Madar is your trusted partner in design excellence. Let us turn your vision into a space you’ll love.",
     de9: " 📞 Contact us today and let’s bring your dream design to life!",
+    //map
+    loc:"Location",
+    loccontent:"We are located in the UAE but we operate around the world, 24/7.",
+    Yearsofworks:"Years of works",
+    countries:"countries",
+    equippedapartments:"equipped apartments in Dubai",
     //blogs
     blog: "From The Blog Post",
     subblogs: "Latest News & Articles",
@@ -339,7 +352,13 @@ number:"+971508853854",
     de7: "تصاميم داخلية وخارجية تُعبّر عن ذوقكم الرفيع، سواءً كان عصريًا أو كلاسيكيًا أو أي شيء بينهما.",
     de8: "من المنازل المريحة إلى المعالم التجارية، المدار شريككم الموثوق في التميز في التصميم. دعنا نُحوّل رؤيتكم إلى مساحة ستُحبّونها.",
     de9: " تواصلوا معنا اليوم لنُحوّل تصميم أحلامكم إلى واقع. 📞 ",
-    //blogs
+      //map
+    loc:"الموقع",
+    loccontent:"موقعنا في الإمارات العربية المتحدة، لكننا نعمل حول العالم على مدار الساعة",
+    Yearsofworks:"سنوات العمل",
+    countries:"الدول",
+    equippedapartments:"شقق مجهزة في دبي",
+      //blogs
     blog: "المدونة",
     subblogs: "آخر الأخبار والمقالات",
     blogscardname1: "أحمد محمد",
@@ -445,6 +464,12 @@ function applyLanguage(lang) {
   setText(details, T.details);
   setText(subDetails, T.subDetails);
   setHTML(detailscontent, `${T.de1}<br/>${T.de2}<br/>${T.de3}<br/><br/>${T.de4}<br/>${T.de5}<br/>${T.de6}<br/>${T.de7}<br/><br/>${T.de8}<br/><br/>${T.de9}<br/>`);
+  setText(loc, T.loc);
+  setText(loccontent, T.loccontent);
+  setText(Yearsofworks, T.Yearsofworks);
+  setText(countries, T.countries);
+  setText(equippedapartments, T.equippedapartments);
+
 
   setText(blog, T.blog);
   setText(subblogs, T.subblogs);

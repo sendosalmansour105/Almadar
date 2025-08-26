@@ -836,7 +836,65 @@ body {
 }
 
 /* map  ----------------------------------------------------------------------------*/
+.container-map{
+  background: #4b4f4d;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.map-content{
+  display: flex;
+  justify-content: center;
+width: 100%;
+}
+.map{
+  background-color: #4b4f4d;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+.map img{
+  opacity: .4;
+}
+.map span{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  top: 27%;
+  right:  17%;
+  background-color: #fff;
+  animation: mark 1.5s linear infinite;
+}
+@keyframes mark {
+  100%{
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+ .loc{
+    font-size: x-large;
+    margin-top: 50px;
+    margin-bottom: 30px;
+   color: antiquewhite;
+     font-family: var(--ff-heebo);
+     width: 100%;
+   display: flex;
+   justify-content: center;
 
+}
+.loccontent{
+  color: beige;
+  font-size: medium;
+}
+.countermap{
+  padding: 0 !important;
+  background-color: #4b4f4d !important;
+  color: #fff;
+  
+}
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*\
   #BLOG
 \*-----------------------------------*/
@@ -1114,7 +1172,19 @@ body {
     width: calc(50% - 20px);
   }
 
+/* map  */
 
+.map {
+  width: 100%;
+  height: 60vh;
+}
+.map img{
+  width: 100%;
+}
+.map span{
+  right: 19%;
+  top: 29%;
+}
   /**
    * FOOTER
    */

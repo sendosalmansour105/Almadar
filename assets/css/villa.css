@@ -1,0 +1,292 @@
+ :root {
+     --ff-abril-fatface: 'Petrov Sans-Trial', sans-serif;
+     --mikado-yellow: #f2925f;
+ }
+
+ li {
+     list-style: none;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ a * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: var(--ff-abril-fatface);
+ }
+
+ html {
+     font-family: var(--ff-abril-fatface);
+     font-size: 10px;
+     scroll-behavior: smooth;
+     max-width: 100%;
+     overflow-x: hidden;
+ }
+
+ body {
+
+     min-height: 100vh;
+     background: #fffcfa;
+     margin: 0;
+ }
+
+ .container {
+     position: relative;
+     max-width: 1350px;
+     margin: 50px auto;
+     width: 90%;
+ }
+
+ .rtl {
+     direction: rtl;
+     text-align: right;
+ }
+
+ .arabicFont {
+     font-family: 'Cairo', sans-serif;
+ }
+ .container,
+  section,
+  header,
+
+  main {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+ /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+ .header {
+     background: #4b4f4d;
+     padding-block: 10px;
+     height: 7rem;
+     overflow: hidden;
+     transition: 0.25s cubic-bezier(0.33, 0.85, 0.56, 1.02);
+
+ }
+
+ .header.active {
+     height: 425px;
+     transition-duration: 0.35s;
+ }
+
+ .header .containerh {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .logo {
+     color: hsl(0, 0%, 100%);
+     font-size: 2.4rem;
+     font-family: 'Abril Fatface';
+     font-weight: 600;
+     display: flex;
+     justify-items: center;
+     align-items: baseline;
+ }
+
+ .logo p {
+     font-size: 1.8rem;
+     margin-left: 3px;
+     font-family: none;
+ }
+
+ .BackToHome {
+     margin: 0;
+     border: none;
+     background: none;
+ }
+
+ .BackToHome a {
+     color: #f0eeef;
+     font-size: 50px;
+ }
+
+ /* villa---------------------------------------------------- */
+
+.carousel{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  position: relative;
+}
+
+.carousel .list .item{
+    position: absolute;
+ inset: 0 0 0 0;
+}
+.carousel .list .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel .list .item .content{
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #fffcfa;
+}
+.carousel .list .item .content .auther{
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+.carousel .list .item .content .title, 
+.carousel .list .item .content .topic{
+font-weight: bold;
+font-size: 5em;
+list-style: none;
+}
+.thunbnail{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+.thunbnail .item{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+.thunbnail .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    
+}
+.thunbnail .item .content{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    color: aliceblue;
+    font-size: larger;
+}
+.thunbnail .item .content .title{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+ /* .villa_1 {
+     background: #ececec;
+     min-height: 80vh;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     padding-top: 10px;
+     margin-bottom: 20px;
+ }
+
+ .slides {
+     height: 70vh;
+     width: 95%;
+     overflow: hidden;
+     position: relative;
+    
+ }
+
+ .slide {
+     position: absolute;
+     height: 100%;
+     opacity: 0;
+     inset: 0;
+     animation: slideshow 12s infinite;
+ }
+
+ .slide img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     object-position: center;
+ }
+
+ .silde-2 {
+     animation-delay: 4s;
+ }
+
+ .silde-3 {
+     animation-delay: 8s;
+ }
+
+ @keyframes slideshow {
+     0% {
+         opacity: 0;
+     }
+
+     10% {
+         opacity: 1;
+     }
+
+     20%,
+     30% {
+         opacity: 1;
+         scale: 1.03;
+     }
+
+     50% {
+         opacity: 0;
+     }
+ }
+
+
+h1 {
+  font-size: 24px;
+  color: #f2925f;
+}
+
+
+
+
+ @media (min-width: 992px) {
+     .villa_1 {
+justify-content: space-between;
+padding: 10px;
+ }
+ .slides {
+     height: 50vh;
+     width: 50%;
+    }
+    .slide_content{
+        width: 40%;
+    }
+ }
+
+  @media (max-width: 450px) {
+     .villa_1 {
+     padding: 2px;
+     min-height: 30vh;
+     }
+ .slides {
+     height: 30vh;
+     width: 100%;
+   
+    }
+    .slide_content{
+        width: 100%;
+    }
+  } */
+
