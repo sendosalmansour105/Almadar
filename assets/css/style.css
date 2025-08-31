@@ -14,8 +14,13 @@
 .arabicFont {
   font-family: 'Cairo', sans-serif;
 }
-
-
+.arabicFont #logo1{
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.arabicFont #logo1 p{
+  font-size: 25px;
+}
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
@@ -837,7 +842,7 @@ body {
 
 /* map  ----------------------------------------------------------------------------*/
 .container-map{
-  background: #4b4f4d;
+  background: #1d1d1d;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -849,14 +854,14 @@ body {
 width: 100%;
 }
 .map{
-  background-color: #4b4f4d;
+  background-color: #1d1d1d;
   position: relative;
   display: flex;
   justify-content: center;
   width: fit-content;
 }
 .map img{
-  opacity: .4;
+  opacity: .9;
 }
 .map span{
   position: absolute;
@@ -891,7 +896,7 @@ width: 100%;
 }
 .countermap{
   padding: 0 !important;
-  background-color: #4b4f4d !important;
+  background-color: #1d1d1d !important;
   color: #fff;
   
 }

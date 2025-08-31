@@ -80,6 +80,8 @@ const setText = (el, val) => { if (el) el.textContent = val; };
 const setHTML = (el, val) => { if (el) el.innerHTML = val; };
 
 /** ================== SELECT ELEMENTS ================== */
+const logo = document.getElementById('logo1');
+
 const home = document.getElementById('navbar-Home');
 const works = document.getElementById('navbar-work');
 const about = document.getElementById('navbar-about');
@@ -186,6 +188,8 @@ const body = document.body;
 /** ================== TRANSLATIONS ================== */
 const translations = {
   en: {
+   l1:"AL MADAR",
+   l2:"Al MUTAMAIZ",
     langButton: 'عربي',
     home: "Home",
     works: "Our Works",
@@ -293,6 +297,8 @@ number:"+971508853854",
 
   },
   ar: {
+      l1:"المدار ",
+   l2:"المتميز",
     langButton: 'English',
    home: "الصفحة الرئيسة",
     works: "أعمالنا",
@@ -414,7 +420,7 @@ function applyLanguage(lang) {
   if (!T) return;
 
   if (langButton) setText(langButton, T.langButton);
-
+  setHTML(logo, `${T.l1}<p>${T.l2}</p>`);
   setText(home, T.home);
   setText(works, T.works);
   setText(about, T.about);

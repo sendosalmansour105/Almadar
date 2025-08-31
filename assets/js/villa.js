@@ -41,3 +41,47 @@ function showSlider(type) {
         nextDom.click();
     }, timeAutoNext)
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+(() => {
+  'use strict';
+
+  // عناصر الصفحة
+  const projects = document.getElementById('auther-v1');
+
+
+  // الترجمات
+  const translations = {
+    en: {
+      projects: "Villa 1",
+     
+    },
+    ar: {
+      projects: "فيلا 1",
+     
+    }
+  };
+
+  // دالة تطبيق اللغة
+  function applyPLanguage() {
+    const lang = localStorage.getItem('lang') || 'ar';
+    const T = translations[lang];
+
+    if (projects) projects.textContent = T.projects;
+  
+
+    // اتجاه الصفحة
+    document.documentElement.lang = lang;
+    document.body.dir = (lang === "ar") ? "rtl" : "ltr";
+    if (lang === 'ar') {
+    body.classList.add('rtl', 'arabicFont');
+    body.dir = 'rtl';
+  } else {
+    body.classList.remove('rtl', 'arabicFont');
+    body.dir = 'ltr';
+  }
+  }
+
+  // نفّذ عند تحميل الصفحة
+  document.addEventListener('DOMContentLoaded', applyPLanguage);
+})();
