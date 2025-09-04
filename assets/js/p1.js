@@ -9,8 +9,16 @@
   const bedroom = document.getElementById('title-bedroom');
   const bathroom = document.getElementById('title-bathroom');
   const halls = document.getElementById('title-halls');
-  const mandf = document.getElementById('title-mandf');
-  const restaurant = document.getElementById('title-restaurant');
+    const restaurant = document.getElementById('title-restaurant');
+  const woman = document.getElementById('title-woman');
+  const man = document.getElementById('title-man');
+  const hotel = document.getElementById('title-hotel');
+  const hospital = document.getElementById('title-hospital');
+  const sport = document.getElementById('title-sport');
+  const cabinet = document.getElementById('title-cabinets');
+  const pool = document.getElementById('title-pool');
+  const spa = document.getElementById('title-spa');
+
 
   // الترجمات
   const translations = {
@@ -21,8 +29,16 @@
       bedroom: "Bedrooms",
       bathroom: "Bathrooms",
       halls: "Halls",
-      mandf: "Male and Female Halls",
-      restaurant: "Restaurants and Cafe"
+        restaurant: "Restaurants",
+      woman: "Women Majlis",
+      man: "men Majlis",
+      hotel: "Hotels",
+      hospital:"Hospitals",
+      sport: "Sport Clubs",
+      cabinet: "Cabinets",
+      pool: "Hidden Pools",
+      spa: "Spa Processing Centers",
+    
     },
     ar: {
       projects: "مشاريعنا",
@@ -31,8 +47,16 @@
       bedroom: "غرف النوم",
       bathroom: "الحمامات",
       halls: "الصالات",
-      mandf: "صالات للرجال و نساء ",
-      restaurant: "مطاعم ومقاهي"
+       restaurant: "مطاعم ",
+      woman: " مجالس حريم ",
+       man: " مجالس رجال ",
+      hotel: "فنادق",
+      hospital:"مشافي",
+      sport: "نوادي رياضية",
+      cabinet: "خزائن",
+      pool: "مسابح مخفية",
+      spa: "مراكز معالجة صحية",
+    
     }
   };
 
@@ -47,8 +71,15 @@
     if (bedroom) bedroom.textContent = T.bedroom;
     if (bathroom) bathroom.textContent = T.bathroom;
     if (halls) halls.textContent = T.halls;
-    if (mandf) mandf.textContent = T.mandf;
     if (restaurant) restaurant.textContent = T.restaurant;
+    if (woman) woman.textContent = T.woman;
+    if (man) man.textContent = T.man;
+    if (hotel) hotel.textContent = T.hotel;
+    if (hospital) hospital.textContent = T.hospital;
+    if (sport) sport.textContent = T.sport;
+    if (cabinet) cabinet.textContent = T.cabinet;
+    if (pool) pool.textContent = T.pool;
+    if (spa) spa.textContent = T.spa;
 
     // اتجاه الصفحة
     document.documentElement.lang = lang;
