@@ -217,14 +217,14 @@ body {
 }
 
 .btn-primary {
-  --background: var(--viridian-green);
+  --background: #2f4d32;
   --color: var(--white-1);
-  --border-color: var(--viridian-green);
+  --border-color: #2f4d32;
 }
 
 .btn-primary:is(:hover, :focus) {
   --background: transparent;
-  --color: var(--viridian-green);
+  --color: #2f4d32;
 }
 
 
@@ -260,7 +260,7 @@ body {
 }
 
 .h2 {
-  color: var(--jet);
+  color: #2f4d32;
   font-size: var(--fs-3);
   font-weight: var(--fw-500);
 }
@@ -741,7 +741,7 @@ body {
 }
 
 .about-item-icon {
-  background: var(--viridian-green);
+  background: #2f4d32;
   color: var(--white-1);
   font-size: 26px;
   padding: 16px;
@@ -750,7 +750,7 @@ body {
 }
 
 .about-item-title {
-  color: var(--granite-gray);
+  color: #2f4d32;
   font-weight: 300;
   margin-bottom: 5px;
 }
@@ -794,7 +794,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: medium;
-  border: 1px solid var(--viridian-green);
+  border: 1px solid #2f4d32;
 }
 
 
@@ -1605,6 +1605,34 @@ width: 100%;
 }
 
 .whatsAppIcon.active {
+  opacity: 1;
+  visibility: visible;
+}
+.callIcon {
+  position: fixed;
+  bottom: 117px;
+  right: 15px;
+  background-color: #2f4d32;
+  color: var(--white-2);
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-6);
+  display: grid;
+  place-items: center;
+  box-shadow: var(--shadow-1);
+  transition: var(--transition-1);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 4;
+}
+
+.callIcon:is(:hover, :focus-visible) {
+  background-color: white;
+  color: #2f4d32;
+}
+
+.callIcon.active {
   opacity: 1;
   visibility: visible;
 }

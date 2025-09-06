@@ -49,6 +49,17 @@
 .arabicFont {
   font-family: 'Cairo', sans-serif;
 }
+
+
+.scroll-scale {
+  opacity: 0;
+  transform: scale(0.7);
+  transition: all 1.5s;
+}
+.show-items {
+  opacity: 1;
+  transform: translateX(0);
+}
  /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*\
   #HEADER
 \*-----------------------------------*/
