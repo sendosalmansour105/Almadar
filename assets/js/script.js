@@ -535,3 +535,132 @@ function applyLanguage(lang) {
 
 
 // map -------------------------------------------------------
+//  am5.ready(function () {
+
+//       var root = am5.Root.new("chartdiv");
+//       root.setThemes([am5themes_Animated.new(root)]);
+
+//       var chart = root.container.children.push(am5map.MapChart.new(root, {
+//         panX: "translateX",
+//         panY: "translateY",
+//         projection: am5map.geoMercator()
+//       }));
+
+//       // دول العالم
+//       var polygonSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
+//         geoJSON: am5geodata_worldLow
+//       }));
+
+//       // خطوط الإحداثيات
+//       var graticuleSeries = chart.series.push(am5map.GraticuleSeries.new(root, {}));
+//       graticuleSeries.mapLines.template.setAll({
+//         stroke: root.interfaceColors.get("alternativeBackground"),
+//         strokeOpacity: 0.08
+//       });
+
+//       // خطوط الرحلات
+//       var lineSeries = chart.series.push(am5map.MapLineSeries.new(root, {}));
+//       lineSeries.mapLines.template.setAll({
+//         stroke: am5.color(0x0000ff),
+//         strokeOpacity: 0.4,
+//         strokeWidth: 2
+//       });
+
+//       // المدن
+//       var citySeries = chart.series.push(am5map.MapPointSeries.new(root, {}));
+//       citySeries.bullets.push(function () {
+//         var circle = am5.Circle.new(root, {
+//           radius: 5,
+//           tooltipText: "{title}",
+//           tooltipY: 0,
+//           fill: am5.color(0xffba00),
+//           stroke: root.interfaceColors.get("background"),
+//           strokeWidth: 2
+//         });
+//         return am5.Bullet.new(root, { sprite: circle });
+//       });
+
+//       // الأسهم
+//       var arrowSeries = chart.series.push(am5map.MapPointSeries.new(root, {}));
+//       arrowSeries.bullets.push(function () {
+//         var arrow = am5.Graphics.new(root, {
+//           fill: am5.color(0xff0000),
+//           stroke: am5.color(0xff0000),
+//           draw: function (display) {
+//             display.moveTo(0, -3);
+//             display.lineTo(8, 0);
+//             display.lineTo(0, 3);
+//             display.lineTo(0, -3);
+//           }
+//         });
+//         return am5.Bullet.new(root, { sprite: arrow });
+//       });
+
+//       // قائمة المدن
+//       var cities = [
+//         { id: "dubai", title: "Dubai", geometry: { type: "Point", coordinates: [55.2708, 25.2048] } },
+//         { id: "london", title: "London", geometry: { type: "Point", coordinates: [-0.1262, 51.5002] } },
+//         { id: "brussels", title: "Brussels", geometry: { type: "Point", coordinates: [4.3676, 50.8371] } },
+//         { id: "prague", title: "Prague", geometry: { type: "Point", coordinates: [14.4205, 50.0878] } },
+//         { id: "athens", title: "Athens", geometry: { type: "Point", coordinates: [23.7166, 37.9792] } },
+//         { id: "reykjavik", title: "Reykjavik", geometry: { type: "Point", coordinates: [-21.8952, 64.1353] } },
+//         { id: "dublin", title: "Dublin", geometry: { type: "Point", coordinates: [-6.2675, 53.3441] } },
+//         { id: "oslo", title: "Oslo", geometry: { type: "Point", coordinates: [10.7387, 59.9138] } },
+//         { id: "lisbon", title: "Lisbon", geometry: { type: "Point", coordinates: [-9.1355, 38.7072] } },
+//         { id: "moscow", title: "Moscow", geometry: { type: "Point", coordinates: [37.6176, 55.7558] } },
+//         { id: "belgrade", title: "Belgrade", geometry: { type: "Point", coordinates: [20.4781, 44.8048] } },
+//         { id: "bratislava", title: "Bratislava", geometry: { type: "Point", coordinates: [17.1547, 48.2116] } },
+//         { id: "ljublana", title: "Ljubljana", geometry: { type: "Point", coordinates: [14.5060, 46.0514] } },
+
+//         { id: "madrid", title: "Madrid", geometry: { type: "Point", coordinates: [-3.7033, 40.4167] } },
+//         { id: "stockholm", title: "Stockholm", geometry: { type: "Point", coordinates: [18.0645, 59.3328] } },
+//         { id: "bern", title: "Bern", geometry: { type: "Point", coordinates: [7.4481, 46.9480] } },
+//         { id: "kiev", title: "Kiev", geometry: { type: "Point", coordinates: [30.5367, 50.4422] } },
+//         { id: "paris", title: "Paris", geometry: { type: "Point", coordinates: [2.3510, 48.8567] } },
+//         { id: "new york", title: "New York", geometry: { type: "Point", coordinates: [-74, 40.43] } },
+//         { id: "riyadh", title: "Saudi Arabia - Riyadh", geometry: { type: "Point", coordinates: [46.7219, 24.6877] } },
+//         { id: "cairo", title: "Egypt - Cairo", geometry: { type: "Point", coordinates: [31.2357, 30.0444] } },
+//         { id: "algiers", title: "Algeria - Algiers", geometry: { type: "Point", coordinates: [3.0588, 36.7538] } }
+//       ];
+
+//       citySeries.data.setAll(cities);
+
+//       var originLongitude = 55.2708; // Dubai
+//       var originLatitude = 25.2048;
+
+//       var destinations = cities.filter(c => c.id !== "dubai").map(c => c.id);
+
+//       am5.array.each(destinations, function (did) {
+//         var destinationDataItem = citySeries.getDataItemById(did);
+//         var lineDataItem = lineSeries.pushDataItem({
+//           geometry: {
+//             type: "LineString",
+//             coordinates: [
+//               [originLongitude, originLatitude],
+//               [destinationDataItem.get("longitude"), destinationDataItem.get("latitude")]
+//             ]
+//           }
+//         });
+
+//         var arrow = arrowSeries.pushDataItem({
+//           lineDataItem: lineDataItem,
+//           positionOnLine: 0,
+//           autoRotate: true
+//         });
+
+//         // حركة مستمرة للسهم
+//         arrow.animate({
+//           key: "positionOnLine",
+//           to: 1,
+//           duration: 5000,
+//           loops: Infinity,
+//           easing: am5.ease.linear
+//         });
+//       });
+
+//       polygonSeries.events.on("datavalidated", function () {
+//         chart.zoomToGeoPoint({ longitude: originLongitude, latitude: originLatitude }, 3);
+//       });
+
+//       chart.appear(1000, 100);
+//     });
