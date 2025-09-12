@@ -842,11 +842,8 @@ body {
 
 /* map  ----------------------------------------------------------------------------*/
 .container-map{
-  background: #e4e1e1;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  background: none;
+ 
 }
 .map-content{
   display: flex;
