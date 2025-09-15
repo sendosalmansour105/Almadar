@@ -925,7 +925,7 @@ width: 100%;
 .offers .box h2{
   font-size: 18px;
   margin-bottom: 20px;
-  
+  text-transform: uppercase;
 }
 .offers .box h1{
    font-size: 70px;
@@ -1891,5 +1891,44 @@ width: 100%;
     }
      100%{
         background-image: url(../images/finalProjects/f1/f\ \(33\).jpg);
+    }
+}
+
+/* f4 ................................................... */
+.imageslider3{
+    width: 100%;
+    height: 250px;
+    background-image: url(../images/finalProjects/f4/f\ \(1\).jpg);
+    background-size: 100% 100%;
+    animation: changeimage3 22s infinite;
+    animation-delay: 3s;
+    /* you can change the speed  */
+}
+
+@keyframes changeimage3{
+    20%{
+        background-image: url(../images/finalProjects/f4/f\ \(2\).jpg);
+    }
+ 30%{
+        background-image: url(../images/finalProjects/f4/f\ \(3\).jpg);
+    }
+    45%{
+        background-image: url(../images/finalProjects/f4/f\ \(4\).jpg);
+    }
+        55%{
+        background-image: url(../images/finalProjects/f4/f\ \(5\).jpg);
+    }
+      65%{
+        background-image: url(../images/finalProjects/f4/f\ \(8\).jpg);
+    }
+        70%{
+        background-image: url(../images/finalProjects/f4/f\ \(9\).jpg);
+    }
+ 80%{
+        background-image: url(../images/finalProjects/f4/f\ \(6\).jpg);
+    }
+  
+     100%{
+        background-image: url(../images/finalProjects/f4/f\ \(7\).jpg);
     }
 }

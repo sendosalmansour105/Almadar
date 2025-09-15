@@ -141,7 +141,13 @@ const loccontent = document.getElementById('loccontent');
 const Yearsofworks = document.getElementById('Yearsofworks');
 const countries = document.getElementById('countries');
 const equippedapartments = document.getElementById('equippedapartments');
-
+//offers
+const offertitle = document.getElementById('offertitle');
+const belshher = document.getElementById('belshher');
+const subtitleoffer = document.getElementById('subtitleoffer');
+const poffer = document.getElementById('poffer');
+const SUBSCRIBE = document.getElementById('SUBSCRIBE');
+const SPECIALOFFER = document.getElementById('SPECIALOFFER');
 
 // blogs
 const blog = document.getElementById('blogs');
@@ -152,8 +158,8 @@ const blogscardname2 = document.getElementById('author-name2');
 const blogscardtitle2 = document.getElementById('author-title2');
 const blogscardname3 = document.getElementById('author-name3');
 const blogscardtitle3 = document.getElementById('author-title3');
-// const blogscardname4 = document.getElementById('author-name4');
-// const blogscardmore4 = document.getElementById('author-more4');
+const blogscardname4 = document.getElementById('author-name4');
+const blogscardtitle4 = document.getElementById('author-title4');
 // const blogscardname5 = document.getElementById('author-name5');
 // const blogscardmore5 = document.getElementById('author-more5');
 // const blogscardname6 = document.getElementById('author-name6');
@@ -244,6 +250,13 @@ const translations = {
     Yearsofworks:"Years of works",
     countries:"countries",
     equippedapartments:"equipped apartments in Dubai",
+    //offer
+    offertitle:"Residential villa design PLAN",
+    belshher:"/month",
+    subtitleoffer:"this is a very limited time offer which is ending on September 20, 2025.",
+    poffer:"Buy subscribing this deal, you get an unlimited access to our huge collection of million+ clients and designs.",
+    SUBSCRIBE:"SUBSCRIBE",
+    SPECIALOFFER:"SPECIAL OFFER!",
     //blogs
     blog: "From The Blog Post",
     subblogs: "Latest News & Articles",
@@ -256,8 +269,8 @@ const translations = {
     blogscardname3: "Residential Villa",
     blogscardtitle3: "Abu Dhabi - Al Ain",
 
-    // blogscardname4: "Jony bristow",
-    // blogscardtitle4: "Admin",
+    blogscardname4: "Residential Villa",
+    blogscardtitle4: "Abu Dhabi - Al Ain",
 
     // blogscardname5: "Jony bristow",
     // blogscardtitle5: "Admin",
@@ -346,6 +359,13 @@ number:"+9719999999",
     Yearsofworks:"سنوات العمل",
     countries:"الدول",
     equippedapartments:"شقق مجهزة في دبي",
+     //offer
+    offertitle:"خطة تصميم فيلا سكنية",
+    belshher:"/شهريا",
+    subtitleoffer:"هذا عرض لفترة محدودة جدًا ينتهي في ٢٠ سبتمبر ٢٠٢٥.",
+    poffer:"اشترك في هذا العرض لتحصل على وصول غير محدود إلى مجموعتنا الضخمة التي تضم أكثر من +مليون زبون وتصميم    .",
+    SUBSCRIBE:"اشترك",
+      SPECIALOFFER:"عرض خاص!",
       //blogs
     blog: "المدونة",
     subblogs: "آخر الأخبار والمقالات",
@@ -358,8 +378,9 @@ number:"+9719999999",
     blogscardname3: "فيلا سكنية ",
     blogscardtitle3: "ابو ظبي _ العين",
     
-    // blogscardname4: "أحمد محمد",
-    // blogscardtitle4: "الأدمن",
+    blogscardname4: "فيلا سكنية  ",
+    blogscardtitle4: "ابو ظبي _ العين",
+
 
     // blogscardname5: "أحمد محمد",
     // blogscardtitle5: "الأدمن",
@@ -452,39 +473,36 @@ function applyLanguage(lang) {
   setText(countries, T.countries);
   setText(equippedapartments, T.equippedapartments);
 
+ setText(offertitle, T.offertitle);
+  setText(belshher, T.belshher);
+    setText(subtitleoffer, T.subtitleoffer);
+    setText(poffer, T.poffer);
+    setText(SUBSCRIBE, T.SUBSCRIBE);
+    setText(SPECIALOFFER, T.SPECIALOFFER);
+
+
 
   setText(blog, T.blog);
   setText(subblogs, T.subblogs);
 
   setText(blogscardname1, T.blogscardname1);
   setText(blogscardtitle1, T.blogscardtitle1);
-  setText(blogscardcontent1, T.blogscardcontent1);
-  setText(blogscardmore1, T.blogscardmore1);
+  
 
   setText(blogscardname2, T.blogscardname2);
   setText(blogscardtitle2, T.blogscardtitle2);
-  setText(blogscardcontent2, T.blogscardcontent2);
-  setText(blogscardmore2, T.blogscardmore2);
 
   setText(blogscardname3, T.blogscardname3);
   setText(blogscardtitle3, T.blogscardtitle3);
-  setText(blogscardcontent3, T.blogscardcontent3);
-  setText(blogscardmore3, T.blogscardmore3);
 
   setText(blogscardname4, T.blogscardname4);
   setText(blogscardtitle4, T.blogscardtitle4);
-  setText(blogscardcontent4, T.blogscardcontent4);
-  setText(blogscardmore4, T.blogscardmore4);
 
-  setText(blogscardname5, T.blogscardname5);
-  setText(blogscardtitle5, T.blogscardtitle5);
-  setText(blogscardcontent5, T.blogscardcontent5);
-  setText(blogscardmore5, T.blogscardmore5);
+  // setText(blogscardname5, T.blogscardname5);
+  // setText(blogscardtitle5, T.blogscardtitle5);
 
-  setText(blogscardname6, T.blogscardname6);
-  setText(blogscardtitle6, T.blogscardtitle6);
-  setText(blogscardcontent6, T.blogscardcontent6);
-  setText(blogscardmore6, T.blogscardmore6);
+  // setText(blogscardname6, T.blogscardname6);
+  // setText(blogscardtitle6, T.blogscardtitle6);
 
    setText(footertext,T.footertext)
    setText( footer_links,T.footer_links)
