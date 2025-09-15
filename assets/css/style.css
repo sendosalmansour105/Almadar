@@ -1724,4 +1724,172 @@ width: 100%;
   visibility: visible;
 }
 
+/* f1................................................ */
+.imageslider{
+    width: 100%;
+    height: 250px;
+    background-image: url(../images/finalProjects/f2/f\ \(1\).jpg);
+    background-size: 100% 100%;
+    animation: changeimage 10s infinite;
+    animation-delay: 3s;
+    /* you can change the speed  */
+}
 
+@keyframes changeimage{
+    50%{
+        background-image: url(../images/finalProjects/f2/f\ \(2\).jpg);
+    }
+ 75%{
+        background-image: url(../images/finalProjects/f2/f\ \(3\).jpg);
+    }
+    100%{
+        background-image: url(../images/finalProjects/f2/f\ \(4\).jpg);
+    }
+}
+
+.checked{
+    color: #fe7b35;
+  }
+/* f2 ................................................... */
+.imageslider1{
+    width: 100%;
+    height: 250px;
+    background-image: url(../images/finalProjects/f3/f\ \(1\).jpg);
+    background-size: 100% 100%;
+    animation: changeimage1 18s infinite;
+    animation-delay: 3s;
+    /* you can change the speed  */
+}
+
+@keyframes changeimage1{
+    20%{
+        background-image: url(../images/finalProjects/f3/f\ \(2\).jpg);
+    }
+ 40%{
+        background-image: url(../images/finalProjects/f3/f\ \(3\).jpg);
+    }
+    50%{
+        background-image: url(../images/finalProjects/f3/f\ \(4\).jpg);
+    }
+        70%{
+        background-image: url(../images/finalProjects/f3/f\ \(5\).jpg);
+    }
+ 75%{
+        background-image: url(../images/finalProjects/f3/f\ \(6\).jpg);
+    }
+  
+     100%{
+        background-image: url(../images/finalProjects/f3/f\ \(7\).jpg);
+    }
+}
+
+
+/* f3 ................................................... */
+.imageslider2{
+    width: 100%;
+    height: 250px;
+    background-image: url(../images/finalProjects/f1/f\ \(1\).jpg);
+    background-size: 100% 100%;
+    animation: changeimage2 82s infinite;
+    animation-delay: 3s;
+    /* you can change the speed  */
+}
+
+@keyframes changeimage2{
+    2%{
+        background-image: url(../images/finalProjects/f1/f\ \(2\).jpg);
+    }
+ 4%{
+        background-image: url(../images/finalProjects/f1/f\ \(3\).jpg);
+    }
+    7%{
+        background-image: url(../images/finalProjects/f1/f\ \(4\).jpg);
+    }
+        9%{
+        background-image: url(../images/finalProjects/f1/f\ \(5\).jpg);
+    }
+ 14%{
+        background-image: url(../images/finalProjects/f1/f\ \(6\).jpg);
+    }
+    17%{
+        background-image: url(../images/finalProjects/f1/f\ \(7\).jpg);
+    }
+     21%{
+        background-image: url(../images/finalProjects/f1/f\ \(8\).jpg);
+    }
+     25%{
+        background-image: url(../images/finalProjects/f1/f\ \(9\).jpg);
+    }
+     27%{
+        background-image: url(../images/finalProjects/f1/f\ \(10\).jpg);
+    }
+     31%{
+        background-image: url(../images/finalProjects/f1/f\ \(11\).jpg);
+    }
+     34%{
+        background-image: url(../images/finalProjects/f1/f\ \(12\).jpg);
+    }
+     37%{
+        background-image: url(../images/finalProjects/f1/f\ \(13\).jpg);
+    }
+     39%{
+        background-image: url(../images/finalProjects/f1/f\ \(14\).jpg);
+    }
+     42%{
+        background-image: url(../images/finalProjects/f1/f\ \(15\).jpg);
+    }
+     45%{
+        background-image: url(../images/finalProjects/f1/f\ \(16\).jpg);
+    }
+     50%{
+        background-image: url(../images/finalProjects/f1/f\ \(17\).jpg);
+    }
+     54%{
+        background-image: url(../images/finalProjects/f1/f\ \(18\).jpg);
+    }
+     57%{
+        background-image: url(../images/finalProjects/f1/f\ \(19\).jpg);
+    }
+     61%{
+        background-image: url(../images/finalProjects/f1/f\ \(20\).jpg);
+    }
+     63%{
+        background-image: url(../images/finalProjects/f1/f\ \(21\).jpg);
+    }
+     66%{
+        background-image: url(../images/finalProjects/f1/f\ \(22\).jpg);
+    }
+     69%{
+        background-image: url(../images/finalProjects/f1/f\ \(23\).jpg);
+    }
+     72%{
+        background-image: url(../images/finalProjects/f1/f\ \(24\).jpg);
+    }
+     75%{
+        background-image: url(../images/finalProjects/f1/f\ \(25\).jpg);
+    }
+     77%{
+        background-image: url(../images/finalProjects/f1/f\ \(26\).jpg);
+    }
+     79%{
+        background-image: url(../images/finalProjects/f1/f\ \(27\).jpg);
+    }
+     82%{
+        background-image: url(../images/finalProjects/f1/f\ \(28\).jpg);
+    }
+     85%{
+        background-image: url(../images/finalProjects/f1/f\ \(29\).jpg);
+    }
+     89%{
+        background-image: url(../images/finalProjects/f1/f\ \(30\).jpg);
+    }
+     93%{
+        background-image: url(../images/finalProjects/f1/f\ \(31\).jpg);
+    }
+     96%{
+        background-image: url(../images/finalProjects/f1/f\ \(32\).jpg);
+    }
+     100%{
+        background-image: url(../images/finalProjects/f1/f\ \(33\).jpg);
+    }
+}

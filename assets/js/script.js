@@ -148,28 +148,16 @@ const blog = document.getElementById('blogs');
 const subblogs = document.getElementById('subblogs');
 const blogscardname1 = document.getElementById('author-name1');
 const blogscardtitle1 = document.getElementById('author-title1');
-const blogscardcontent1 = document.getElementById('author-content1');
-const blogscardmore1 = document.getElementById('author-more1');
 const blogscardname2 = document.getElementById('author-name2');
 const blogscardtitle2 = document.getElementById('author-title2');
-const blogscardcontent2 = document.getElementById('author-content2');
-const blogscardmore2 = document.getElementById('author-more2');
 const blogscardname3 = document.getElementById('author-name3');
 const blogscardtitle3 = document.getElementById('author-title3');
-const blogscardcontent3 = document.getElementById('author-content3');
-const blogscardmore3 = document.getElementById('author-more3');
-const blogscardname4 = document.getElementById('author-name4');
-const blogscardtitle4 = document.getElementById('author-title4');
-const blogscardcontent4 = document.getElementById('author-content4');
-const blogscardmore4 = document.getElementById('author-more4');
-const blogscardname5 = document.getElementById('author-name5');
-const blogscardtitle5 = document.getElementById('author-title5');
-const blogscardcontent5 = document.getElementById('author-content5');
-const blogscardmore5 = document.getElementById('author-more5');
-const blogscardname6 = document.getElementById('author-name6');
-const blogscardtitle6 = document.getElementById('author-title6');
-const blogscardcontent6 = document.getElementById('author-content6');
-const blogscardmore6 = document.getElementById('author-more6');
+// const blogscardname4 = document.getElementById('author-name4');
+// const blogscardmore4 = document.getElementById('author-more4');
+// const blogscardname5 = document.getElementById('author-name5');
+// const blogscardmore5 = document.getElementById('author-more5');
+// const blogscardname6 = document.getElementById('author-name6');
+// const blogscardmore6 = document.getElementById('author-more6');
 //footer//
 const footertext = document.getElementById('footertext')
 const footer_links = document.getElementById('footer_links')
@@ -259,30 +247,24 @@ const translations = {
     //blogs
     blog: "From The Blog Post",
     subblogs: "Latest News & Articles",
-    blogscardname1: "Jony bristow",
-    blogscardtitle1: "Admin",
-    blogscardcontent1: "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details.",
-    blogscardmore1: "Read More",
-    blogscardname2: "Jony bristow",
-    blogscardtitle2: "Admin",
-    blogscardcontent2: "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details.",
-    blogscardmore2: "Read More",
-    blogscardname3: "Jony bristow",
-    blogscardtitle3: "Admin",
-    blogscardcontent3: "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details.",
-    blogscardmore3: "Read More",
-    blogscardname4: "Jony bristow",
-    blogscardtitle4: "Admin",
-    blogscardcontent4: "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details.",
-    blogscardmore4: "Read More",
-    blogscardname5: "Jony bristow",
-    blogscardtitle5: "Admin",
-    blogscardcontent5: "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details.",
-    blogscardmore5: "Read More",
-    blogscardname6: "Jony bristow",
-    blogscardtitle6: "Admin",
-    blogscardcontent6: "A unique harmony of elegance and comfort, captured in this modern interior design with its soft tones and refined details.",
-    blogscardmore6: "Read More",
+    blogscardname1: "Charcoal Shawarma Restaurant",
+    blogscardtitle1: "Dubai - City Center",
+  
+    blogscardname2: "Apartment",
+    blogscardtitle2: "Syria - Hama",
+
+    blogscardname3: "Residential Villa",
+    blogscardtitle3: "Abu Dhabi - Al Ain",
+
+    // blogscardname4: "Jony bristow",
+    // blogscardtitle4: "Admin",
+
+    // blogscardname5: "Jony bristow",
+    // blogscardtitle5: "Admin",
+
+    // blogscardname6: "Jony bristow",
+    // blogscardtitle6: "Admin",
+
     //footer
     footertext: "Our designs save you time and give you convenience.",
     footer_links: "Links",
@@ -293,7 +275,7 @@ const translations = {
     footer_clients: "Clients",
     footer_contact: "Counact",
     footer_address: "United Arab Emirates, Dubai",
-number:"+971508853854",
+number:"+9719999999",
 
   },
   ar: {
@@ -367,30 +349,24 @@ number:"+971508853854",
       //blogs
     blog: "المدونة",
     subblogs: "آخر الأخبار والمقالات",
-    blogscardname1: "أحمد محمد",
-    blogscardtitle1: "الأدمن",
-    blogscardcontent1: "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
-    blogscardmore1: "تفاصيل أكثر ",
-    blogscardname2: "أحمد محمد",
-    blogscardtitle2: "الأدمن",
-    blogscardcontent2: "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
-    blogscardmore2: "تفاصيل أكثر ",
-    blogscardname3: "أحمد محمد",
-    blogscardtitle3: "الأدمن",
-    blogscardcontent3: "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
-    blogscardmore3: "تفاصيل أكثر ",
-    blogscardname4: "أحمد محمد",
-    blogscardtitle4: "الأدمن",
-    blogscardcontent4: "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
-    blogscardmore4: "تفاصيل أكثر ",
-    blogscardname5: "أحمد محمد",
-    blogscardtitle5: "الأدمن",
-    blogscardcontent5: "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
-    blogscardmore5: "تفاصيل أكثر ",
-    blogscardname6: "أحمد محمد",
-    blogscardtitle6: "الأدمن",
-    blogscardcontent6: "تناغم فريد بين الأناقة والراحة، يتجسد في هذا التصميم الداخلي العصري بألوانه الناعمة وتفاصيله الراقية.",
-  blogscardmore6: "تفاصيل أكثر ",
+    blogscardname1: "مطعم شاورما على الفحم",
+    blogscardtitle1: "دبي _ سيتي سنتر",
+
+    blogscardname2: "شقة سكنية  ",
+    blogscardtitle2: "سوريا _ حماه",
+
+    blogscardname3: "فيلا سكنية ",
+    blogscardtitle3: "ابو ظبي _ العين",
+    
+    // blogscardname4: "أحمد محمد",
+    // blogscardtitle4: "الأدمن",
+
+    // blogscardname5: "أحمد محمد",
+    // blogscardtitle5: "الأدمن",
+
+    // blogscardname6: "أحمد محمد",
+    // blogscardtitle6: "الأدمن",
+
     //footer
     footertext: " تصاميمنا توفر لك الوقت والراحة",
     footer_links: "روابط",
@@ -401,7 +377,7 @@ number:"+971508853854",
     footer_clients: "عملاؤنا",
     footer_contact: "تواصل معنا عبر",
     footer_address: "الامارات العربية , دبي",
-number:"971508853854+"
+number:"971999999+"
   }
 };
 
