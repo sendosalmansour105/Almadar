@@ -4,7 +4,7 @@
 
 
 
-  
+
 
 
 
@@ -114,6 +114,7 @@ const callus = document.getElementById('callus');
 const projectcompleted = document.getElementById('projectcompleted');
 const clientsatisfied = document.getElementById('clientsatisfied');
 const customersatisfaction = document.getElementById('customersatisfaction');
+const beforetitle = document.getElementById('beforetitle');
 // service
 const service = document.getElementById('service');
 const subservice = document.getElementById('subservice');
@@ -182,8 +183,8 @@ const body = document.body;
 /** ================== TRANSLATIONS ================== */
 const translations = {
   en: {
-   l1:"AL MADAR",
-   l2:"Al MUTAMAIZ",
+    l1: "AL MADAR",
+    l2: "Al MUTAMAIZ",
     langButton: 'عربي',
     home: "Home",
     works: "Our Works",
@@ -217,6 +218,7 @@ const translations = {
     projectcompleted: "Projects Completed",
     clientsatisfied: "Clients",
     customersatisfaction: "Customer satisfaction",
+    beforetitle:"Here are some before and after works.",
     //service
     service: "Our services",
     subservice: "Services we provide",
@@ -245,24 +247,24 @@ const translations = {
     de8: "From cozy homes to commercial landmarks, Al-Madar is your trusted partner in design excellence. Let us turn your vision into a space you’ll love.",
     de9: " 📞 Contact us today and let’s bring your dream design to life!",
     //map
-    loc:"Location",
-    loccontent:"We are located in the UAE but we operate around the world, 24/7.",
-    Yearsofworks:"Years of works",
-    countries:"countries",
-    equippedapartments:"equipped apartments in Dubai",
+    loc: "Location",
+    loccontent: "We are located in the UAE but we operate around the world, 24/7.",
+    Yearsofworks: "Years of works",
+    countries: "countries",
+    equippedapartments: "equipped apartments in Dubai",
     //offer
-    offertitle:"Residential villa design PLAN",
-    belshher:"/month",
-    subtitleoffer:"this is a very limited time offer which is ending on September 20, 2025.",
-    poffer:"Buy subscribing this deal, you get an unlimited access to our huge collection of million+ clients and designs.",
-    SUBSCRIBE:"SUBSCRIBE",
-    SPECIALOFFER:"SPECIAL OFFER!",
+    offertitle: "Residential villa design PLAN",
+    belshher: "/month",
+    subtitleoffer: "this is a very limited time offer which is ending on September 20, 2025.",
+    poffer: "Buy subscribing this deal, you get an unlimited access to our huge collection of million+ clients and designs.",
+    SUBSCRIBE: "SUBSCRIBE",
+    SPECIALOFFER: "SPECIAL OFFER!",
     //blogs
     blog: "From The Blog Post",
     subblogs: "Latest News & Articles",
     blogscardname1: "Charcoal Shawarma Restaurant",
     blogscardtitle1: "Dubai - City Center",
-  
+
     blogscardname2: "Apartment",
     blogscardtitle2: "Syria - Hama",
 
@@ -288,14 +290,14 @@ const translations = {
     footer_clients: "Clients",
     footer_contact: "Counact",
     footer_address: "United Arab Emirates, Dubai",
-number:"+9719999999",
+    number: "+9719999999",
 
   },
   ar: {
-      l1:"المدار ",
-   l2:"المتميز",
+    l1: "المدار ",
+    l2: "المتميز",
     langButton: 'English',
-   home: "الصفحة الرئيسة",
+    home: "الصفحة الرئيسة",
     works: "أعمالنا",
     about: "حول شركتنا",
     services: "خدماتنا",
@@ -326,6 +328,7 @@ number:"+9719999999",
     projectcompleted: "المشاريع المنجزة",
     clientsatisfied: "العملاء",
     customersatisfaction: "رضا العملاء",
+    beforetitle:"هنا بعض الاعمال قبل وبعد",
     //service
     service: "خدماتنا",
     subservice: "ما توفره شركتنا من خدمات",
@@ -353,20 +356,20 @@ number:"+9719999999",
     de7: "تصاميم داخلية وخارجية تُعبّر عن ذوقكم الرفيع، سواءً كان عصريًا أو كلاسيكيًا أو أي شيء بينهما.",
     de8: "من المنازل المريحة إلى المعالم التجارية، المدار شريككم الموثوق في التميز في التصميم. دعنا نُحوّل رؤيتكم إلى مساحة ستُحبّونها.",
     de9: " تواصلوا معنا اليوم لنُحوّل تصميم أحلامكم إلى واقع. 📞 ",
-      //map
-    loc:"الموقع",
-    loccontent:"موقعنا في الإمارات العربية المتحدة، لكننا نعمل حول العالم على مدار الساعة",
-    Yearsofworks:"سنوات العمل",
-    countries:"الدول",
-    equippedapartments:"شقق مجهزة في دبي",
-     //offer
-    offertitle:"خطة تصميم فيلا سكنية",
-    belshher:"/شهريا",
-    subtitleoffer:"هذا عرض لفترة محدودة جدًا ينتهي في ٢٠ سبتمبر ٢٠٢٥.",
-    poffer:"اشترك في هذا العرض لتحصل على وصول غير محدود إلى مجموعتنا الضخمة التي تضم أكثر من +مليون زبون وتصميم    .",
-    SUBSCRIBE:"اشترك",
-      SPECIALOFFER:"عرض خاص!",
-      //blogs
+    //map
+    loc: "الموقع",
+    loccontent: "موقعنا في الإمارات العربية المتحدة، لكننا نعمل حول العالم على مدار الساعة",
+    Yearsofworks: "سنوات العمل",
+    countries: "الدول",
+    equippedapartments: "شقق مجهزة في دبي",
+    //offer
+    offertitle: "خطة تصميم فيلا سكنية",
+    belshher: "/شهريا",
+    subtitleoffer: "هذا عرض لفترة محدودة جدًا ينتهي في ٢٠ سبتمبر ٢٠٢٥.",
+    poffer: "اشترك في هذا العرض لتحصل على وصول غير محدود إلى مجموعتنا الضخمة التي تضم أكثر من +مليون زبون وتصميم    .",
+    SUBSCRIBE: "اشترك",
+    SPECIALOFFER: "عرض خاص!",
+    //blogs
     blog: "المدونة",
     subblogs: "آخر الأخبار والمقالات",
     blogscardname1: "مطعم شاورما على الفحم",
@@ -377,13 +380,13 @@ number:"+9719999999",
 
     blogscardname3: "فيلا سكنية ",
     blogscardtitle3: "ابو ظبي _ العين",
-    
+
     blogscardname4: "فيلا سكنية  ",
     blogscardtitle4: "ابو ظبي _ العين",
 
 
     blogscardname5: "مشروع دراسة واجهة فيلا سكنية",
-    blogscardtitle5:"ابو ظبي _ العين",
+    blogscardtitle5: "ابو ظبي _ العين",
 
     blogscardname6: "فندق سكني ",
     blogscardtitle6: " السعودية",
@@ -398,7 +401,7 @@ number:"+9719999999",
     footer_clients: "عملاؤنا",
     footer_contact: "تواصل معنا عبر",
     footer_address: "الامارات العربية , دبي",
-number:"971999999+"
+    number: "971999999+"
   }
 };
 
@@ -473,12 +476,12 @@ function applyLanguage(lang) {
   setText(countries, T.countries);
   setText(equippedapartments, T.equippedapartments);
 
- setText(offertitle, T.offertitle);
+  setText(offertitle, T.offertitle);
   setText(belshher, T.belshher);
-    setText(subtitleoffer, T.subtitleoffer);
-    setText(poffer, T.poffer);
-    setText(SUBSCRIBE, T.SUBSCRIBE);
-    setText(SPECIALOFFER, T.SPECIALOFFER);
+  setText(subtitleoffer, T.subtitleoffer);
+  setText(poffer, T.poffer);
+  setText(SUBSCRIBE, T.SUBSCRIBE);
+  setText(SPECIALOFFER, T.SPECIALOFFER);
 
 
 
@@ -487,7 +490,7 @@ function applyLanguage(lang) {
 
   setText(blogscardname1, T.blogscardname1);
   setText(blogscardtitle1, T.blogscardtitle1);
-  
+
 
   setText(blogscardname2, T.blogscardname2);
   setText(blogscardtitle2, T.blogscardtitle2);
@@ -504,26 +507,43 @@ function applyLanguage(lang) {
   setText(blogscardname6, T.blogscardname6);
   setText(blogscardtitle6, T.blogscardtitle6);
 
-   setText(footertext,T.footertext)
-   setText( footer_links,T.footer_links)
-   setText(footer_home,T.footer_home)
-   setText(footer_works,T.footer_works)
-   setText(footer_aboutus,T.footer_aboutus)
-   setText(footer_services,T.footer_services)
-   setText(footer_clients,T.footer_clients)
-   setText(footer_contact,T.footer_contact)
-   setText(footer_address,T.footer_address)
-   setText(number,T.number)
+  setText(footertext, T.footertext)
+  setText(footer_links, T.footer_links)
+  setText(footer_home, T.footer_home)
+  setText(footer_works, T.footer_works)
+  setText(footer_aboutus, T.footer_aboutus)
+  setText(footer_services, T.footer_services)
+  setText(footer_clients, T.footer_clients)
+  setText(footer_contact, T.footer_contact)
+  setText(footer_address, T.footer_address)
+  setText(number, T.number)
 
+
+    setText(beforetitle, T.beforetitle)
   // الاتجاه
   document.documentElement.lang = lang;
   body.dir = (lang === 'ar') ? 'rtl' : 'ltr';
-      if (lang === 'ar') {
+  if (lang === 'ar') {
     body.classList.add('rtl', 'arabicFont');
     body.dir = 'rtl';
+
+    // 🟢 إجبار الـ sliderButton يبقى LTR
+  document.querySelectorAll('.sliderButton').forEach(btn => {
+    btn.style.direction = 'ltr';
+    btn.style.left = '';
+    btn.style.right = 'auto'; // نتأكد إنو ما ينعكس
+  });
+
   } else {
     body.classList.remove('rtl', 'arabicFont');
     body.dir = 'ltr';
+
+    // 🟢 نخلي الوضع طبيعي
+  document.querySelectorAll('.sliderButton').forEach(btn => {
+    btn.style.direction = 'ltr'; // يضل ثابت
+    btn.style.left = '';
+    btn.style.right = 'auto';
+  });
   }
 }
 
@@ -531,7 +551,22 @@ function applyLanguage(lang) {
 // before and after--------------------------------------------------------
 
 const containerAfterbefore = document.querySelector('.containerBeforeAfter');
+const containerAfterbefore2 = document.getElementById('containerBeforeAfter2');
+const containerAfterbefore3 = document.getElementById('containerBeforeAfter3');
+const containerAfterbefore4 = document.getElementById('containerBeforeAfter4');
 
-document.querySelector('.sliderBeforeAfter').addEventListener('input' , (e)=>{
-containerAfterbefore.style.setProperty('--position', `${e.target.value}%`)
+document.querySelector('.sliderBeforeAfter').addEventListener('input', (e) => {
+  containerAfterbefore.style.setProperty('--position', `${e.target.value}%`)
+})
+
+document.getElementById('sliderBeforeAfter2').addEventListener('input', (e) => {
+  containerAfterbefore2.style.setProperty('--position', `${e.target.value}%`)
+})
+
+document.getElementById('sliderBeforeAfter3').addEventListener('input', (e) => {
+  containerAfterbefore3.style.setProperty('--position', `${e.target.value}%`)
+})
+
+document.getElementById('sliderBeforeAfter4').addEventListener('input', (e) => {
+  containerAfterbefore4.style.setProperty('--position', `${e.target.value}%`)
 })

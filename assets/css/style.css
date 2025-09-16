@@ -1664,6 +1664,7 @@ width: 100%;
   .hero-subtitle {
     font-size: 1rem;
   }
+  
 }
 
 
@@ -1988,9 +1989,10 @@ width: 100%;
   max-width: 100%;
 }
 .mainBeforeAfter{
-  display: grid;
+  display: flex;
   place-items: center;
 padding: 10px;
+gap: 10px;
 }
 .containerBeforeAfter{
   display: grid;
@@ -1998,7 +2000,7 @@ padding: 10px;
   position: relative;
   overflow: hidden;
   border-radius: 1rem;
-  --postion:50%;
+  --position:50%;
 }
 .imagecontainer{
 max-width: 800px;
@@ -2049,9 +2051,25 @@ aspect-ratio: 1/1;
  display: grid;
  place-items: center;
  top: 50%;
- left: var(--position);
+ left: var(--position) !important;
    transform: translate(-50% , -50%);
     pointer-events: none;
     z-index: 100;
     box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
+    direction: ltr !important;
+    right: auto !important;
+}
+body.rtl .sliderButton{
+direction: ltr !important;
+  left: var(--position) !important;
+  right: auto !important;
+}
+
+@media (max-width: 768px) {
+  .mainBeforeAfter{
+  display: grid;
+  place-items: center;
+padding: 10px;
+gap: 10px;
+}
 }
