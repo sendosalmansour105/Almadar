@@ -160,10 +160,10 @@ const blogscardname3 = document.getElementById('author-name3');
 const blogscardtitle3 = document.getElementById('author-title3');
 const blogscardname4 = document.getElementById('author-name4');
 const blogscardtitle4 = document.getElementById('author-title4');
-// const blogscardname5 = document.getElementById('author-name5');
-// const blogscardmore5 = document.getElementById('author-more5');
-// const blogscardname6 = document.getElementById('author-name6');
-// const blogscardmore6 = document.getElementById('author-more6');
+const blogscardname5 = document.getElementById('author-name5');
+const blogscardtitle5 = document.getElementById('author-title5');
+const blogscardname6 = document.getElementById('author-name6');
+const blogscardtitle6 = document.getElementById('author-title6');
 //footer//
 const footertext = document.getElementById('footertext')
 const footer_links = document.getElementById('footer_links')
@@ -272,11 +272,11 @@ const translations = {
     blogscardname4: "Residential Villa",
     blogscardtitle4: "Abu Dhabi - Al Ain",
 
-    // blogscardname5: "Jony bristow",
-    // blogscardtitle5: "Admin",
+    blogscardname5: "Residential Villa Facade Study Project",
+    blogscardtitle5: "Abu Dhabi - Al Ain",
 
-    // blogscardname6: "Jony bristow",
-    // blogscardtitle6: "Admin",
+    blogscardname6: "Residential hotel",
+    blogscardtitle6: "Saudi Arabian",
 
     //footer
     footertext: "Our designs save you time and give you convenience.",
@@ -382,11 +382,11 @@ number:"+9719999999",
     blogscardtitle4: "ابو ظبي _ العين",
 
 
-    // blogscardname5: "أحمد محمد",
-    // blogscardtitle5: "الأدمن",
+    blogscardname5: "مشروع دراسة واجهة فيلا سكنية",
+    blogscardtitle5:"ابو ظبي _ العين",
 
-    // blogscardname6: "أحمد محمد",
-    // blogscardtitle6: "الأدمن",
+    blogscardname6: "فندق سكني ",
+    blogscardtitle6: " السعودية",
 
     //footer
     footertext: " تصاميمنا توفر لك الوقت والراحة",
@@ -498,11 +498,11 @@ function applyLanguage(lang) {
   setText(blogscardname4, T.blogscardname4);
   setText(blogscardtitle4, T.blogscardtitle4);
 
-  // setText(blogscardname5, T.blogscardname5);
-  // setText(blogscardtitle5, T.blogscardtitle5);
+  setText(blogscardname5, T.blogscardname5);
+  setText(blogscardtitle5, T.blogscardtitle5);
 
-  // setText(blogscardname6, T.blogscardname6);
-  // setText(blogscardtitle6, T.blogscardtitle6);
+  setText(blogscardname6, T.blogscardname6);
+  setText(blogscardtitle6, T.blogscardtitle6);
 
    setText(footertext,T.footertext)
    setText( footer_links,T.footer_links)
