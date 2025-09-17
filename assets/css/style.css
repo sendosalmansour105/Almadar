@@ -1728,7 +1728,7 @@ width: 100%;
 /* f1................................................ */
 .imageslider{
     width: 100%;
-    height: 250px;
+      height: 400px;
     background-image: url(../images/finalProjects/f2/f\ \(1\).jpg);
     background-size: 100% 100%;
     animation: changeimage 10s infinite;
@@ -1754,7 +1754,7 @@ width: 100%;
 /* f2 ................................................... */
 .imageslider1{
     width: 100%;
-    height: 250px;
+      height: 400px;
     background-image: url(../images/finalProjects/f3/f\ \(1\).jpg);
     background-size: 100% 100%;
     animation: changeimage1 18s infinite;
@@ -1788,7 +1788,7 @@ width: 100%;
 /* f3 ................................................... */
 .imageslider2{
     width: 100%;
-    height: 250px;
+    height: 400px;
     background-image: url(../images/finalProjects/f1/f\ \(1\).jpg);
     background-size: 100% 100%;
     animation: changeimage2 82s infinite;
@@ -1898,7 +1898,7 @@ width: 100%;
 /* f4 ................................................... */
 .imageslider3{
     width: 100%;
-    height: 250px;
+     height: 400px;
     background-image: url(../images/finalProjects/f4/f\ \(1\).jpg);
     background-size: 100% 100%;
     animation: changeimage3 22s infinite;
@@ -1936,7 +1936,7 @@ width: 100%;
 /* f5 ................................................... */
 .imageslider4{
     width: 100%;
-    height: 250px;
+    height: 400px;
     background-image: url(../images/finalProjects/f5/f\ \(1\).jpg);
     background-size: 100% 100%;
     animation: changeimage4 13s infinite;
@@ -1964,7 +1964,7 @@ width: 100%;
 /* f5 ................................................... */
 .imageslider5{
     width: 100%;
-    height: 250px;
+    height: 400px;
     background-image: url(../images/finalProjects/f6/f\ \(1\).jpg);
     background-size: 100% 100%;
     animation: changeimage5 13s infinite;

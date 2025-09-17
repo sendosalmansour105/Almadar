@@ -86,7 +86,6 @@ const home = document.getElementById('navbar-Home');
 const works = document.getElementById('navbar-work');
 const about = document.getElementById('navbar-about');
 const services = document.getElementById('navbar-services');
-const client = document.getElementById('navbar-clients');
 const blogs = document.getElementById('navbar-blogs');
 const contact = document.getElementById('navbar-contact');
 
@@ -128,9 +127,7 @@ const landscape = document.getElementById('landscapeservice');
 const landscapetitle = document.getElementById('landscapetitle');
 const landscapecontent = document.getElementById('landscapecontent');
 
-// clients
-const clients = document.getElementById('clients');
-const subclients = document.getElementById('subclients');
+
 
 // details
 const details = document.getElementById('details');
@@ -172,7 +169,6 @@ const footer_home = document.getElementById('footer_home')
 const footer_works = document.getElementById('footer_works')
 const footer_aboutus = document.getElementById('footer_aboutus')
 const footer_services = document.getElementById('footer_services')
-const footer_clients = document.getElementById('footer_clients')
 const footer_contact = document.getElementById('footer_contact')
 const footer_address = document.getElementById('footer_address')
 const number = document.getElementById('number')
@@ -190,7 +186,7 @@ const translations = {
     works: "Our Works",
     about: "About Us",
     services: "Services",
-    client: "Our Clients",
+
     blogs: "Blogs",
     contact: "Contact Us",
 
@@ -231,9 +227,7 @@ const translations = {
     landscape: "Landscape design",
     landscapetitle: "Walkways, courtyards, water bodies, parking etc.",
     landscapecontent: "Landscape design is practiced by landscape designers, combining nature and culture.",
-    //clients
-    clients: "Our Clients",
-    subclients: "We Work With The Best Clients",
+
     //details
     details: "Details",
     subDetails: "More Details About Us.",
@@ -287,7 +281,6 @@ const translations = {
     footer_works: "Works",
     footer_aboutus: "About us",
     footer_services: "Services",
-    footer_clients: "Clients",
     footer_contact: "Counact",
     footer_address: "United Arab Emirates, Dubai",
     number: "+9719999999",
@@ -301,7 +294,6 @@ const translations = {
     works: "أعمالنا",
     about: "حول شركتنا",
     services: "خدماتنا",
-    client: "عملائنا",
     blogs: "المدونة",
     contact: "تواصل معنا",
     //work
@@ -341,9 +333,7 @@ const translations = {
     landscape: "تصميم المناظر الطبيعية",
     landscapetitle: " الساحات، المسطحات المائية، مواقف السيارات، إلخ",
     landscapecontent: "الجمع بين الطبيعة والثقافة",
-    //clients
-    clients: "عملاؤنا",
-    subclients: "نعمل مع أفضل العملاء",
+ 
     //details
     details: "تفاصيل",
     subDetails: " تفاصيل أكثر عن شركتنا",
@@ -398,7 +388,6 @@ const translations = {
     footer_works: "أعمالنا",
     footer_aboutus: "حول شركتنا",
     footer_services: "خدماتنا",
-    footer_clients: "عملاؤنا",
     footer_contact: "تواصل معنا عبر",
     footer_address: "الامارات العربية , دبي",
     number: "971999999+"
@@ -425,7 +414,7 @@ function applyLanguage(lang) {
   setText(works, T.works);
   setText(about, T.about);
   setText(services, T.services);
-  setText(client, T.client);
+
   setText(blogs, T.blogs);
   setText(contact, T.contact);
 
@@ -464,8 +453,7 @@ function applyLanguage(lang) {
   setText(landscapetitle, T.landscapetitle);
   setText(landscapecontent, T.landscapecontent);
 
-  setText(clients, T.clients);
-  setText(subclients, T.subclients);
+
 
   setText(details, T.details);
   setText(subDetails, T.subDetails);
@@ -513,7 +501,6 @@ function applyLanguage(lang) {
   setText(footer_works, T.footer_works)
   setText(footer_aboutus, T.footer_aboutus)
   setText(footer_services, T.footer_services)
-  setText(footer_clients, T.footer_clients)
   setText(footer_contact, T.footer_contact)
   setText(footer_address, T.footer_address)
   setText(number, T.number)
