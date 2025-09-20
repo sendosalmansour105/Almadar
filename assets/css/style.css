@@ -921,6 +921,17 @@ width: 100%;
   transform: translate(-50%, -50%);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   color: #555;
+animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background: #ded9d3;
+  }
+  to {
+    box-shadow: 0 0 30px 10px rgba(242, 146, 95, 0.7);
+    background: #fff4ec;
+  }
 }
 .offers .box h2{
   font-size: 18px;
@@ -928,7 +939,7 @@ width: 100%;
   text-transform: uppercase;
 }
 .offers .box h1{
-   font-size: 70px;
+   font-size: 22px;
   margin-bottom: 20px;
   color: var(--mikado-yellow);
   font-weight: 500;

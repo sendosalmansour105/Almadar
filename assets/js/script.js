@@ -141,7 +141,7 @@ const countries = document.getElementById('countries');
 const equippedapartments = document.getElementById('equippedapartments');
 //offers
 const offertitle = document.getElementById('offertitle');
-const belshher = document.getElementById('belshher');
+const Designvilla = document.getElementById('Designvilla');
 const subtitleoffer = document.getElementById('subtitleoffer');
 const poffer = document.getElementById('poffer');
 const SUBSCRIBE = document.getElementById('SUBSCRIBE');
@@ -248,9 +248,9 @@ const translations = {
     equippedapartments: "equipped apartments in Dubai",
     //offer
     offertitle: "Residential villa design PLAN",
-    belshher: "/month",
-    subtitleoffer: "this is a very limited time offer which is ending on September 20, 2025.",
-    poffer: "Buy subscribing this deal, you get an unlimited access to our huge collection of million+ clients and designs.",
+    Designvilla:"Design the entire villa for AED 7,499 / Get a 35% discount for the second purchase and a 50% discount for the third purchase.",
+    subtitleoffer: "This offer celebrates our new opening in Dubai. The offer is for a limited time.",
+    poffer: "Subscribe to this offer to gain unlimited access to our extensive network of over 100 clients across the UAE.",
     SUBSCRIBE: "SUBSCRIBE",
     SPECIALOFFER: "SPECIAL OFFER!",
     //blogs
@@ -354,9 +354,9 @@ const translations = {
     equippedapartments: "شقق مجهزة في دبي",
     //offer
     offertitle: "خطة تصميم فيلا سكنية",
-    belshher: "/شهريا",
-    subtitleoffer: "هذا عرض لفترة محدودة جدًا ينتهي في ٢٠ سبتمبر ٢٠٢٥.",
-    poffer: "اشترك في هذا العرض لتحصل على وصول غير محدود إلى مجموعتنا الضخمة التي تضم أكثر من +مليون زبون وتصميم    .",
+   Designvilla:" صمم الفيلا بالكامل بسعر 7499 درهم اماراتي / واحصل على 35% خصم للثانية واحصل ع خصم 50% للثالثة .",
+    subtitleoffer: "هذا العرض بمناسبة افتتاحنا الجديد في إمارة دبي العرض لفترة محدودة.",
+    poffer: " اشترك في هذا العرض لتحصل على وصول غير محدود الى مجموعتنا الضخمة التي تضم أكثر من 100 عميل في مختلف امارات الدولة",
     SUBSCRIBE: "اشترك",
     SPECIALOFFER: "عرض خاص!",
     //blogs
@@ -465,8 +465,9 @@ function applyLanguage(lang) {
   setText(equippedapartments, T.equippedapartments);
 
   setText(offertitle, T.offertitle);
-  setText(belshher, T.belshher);
+
   setText(subtitleoffer, T.subtitleoffer);
+  setText(Designvilla, T.Designvilla);
   setText(poffer, T.poffer);
   setText(SUBSCRIBE, T.SUBSCRIBE);
   setText(SPECIALOFFER, T.SPECIALOFFER);
