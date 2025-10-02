@@ -371,7 +371,7 @@ justify-content: center;
   stroke-opacity: 1;
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
-  animation: dash 5s linear forwards;
+  animation: dash 3s linear forwards;
 }
 .heart #point {
   fill: none;
@@ -383,15 +383,13 @@ justify-content: center;
   stroke-opacity: 1;
   stroke-dasharray: 0.0001, 0.9999;
   stroke-dashoffset: 1;
-  animation: dash 5s linear forwards;
+  animation: dash 3s linear forwards;
 }
 @keyframes dash {
   0% {
     stroke-dashoffset: 1;
   }
-  80% {
-    stroke-dashoffset: 0;
-  }
+ 
   100% {
     stroke-dashoffset: 0;
   }
