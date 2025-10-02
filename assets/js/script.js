@@ -6,9 +6,41 @@
 
 
 
+/**
+ * PRELOAD
+ * 
+ * loading will be end after document is loaded
+ */
+
+const preloader = document.querySelector("[data-preaload]");
+
+const word2 = document.querySelector('.word2');
+
+const text2 ="Al MADAR Al MUTAMAIZ"
+
+
+window.addEventListener("load", function () {
+
+
+setTimeout(() => {
+    word2.style.opacity = "1";
+    let i = 0;
+    const interval = setInterval(() => {
+      word2.textContent += text2[i];
+      i++;
+      if (i === text2.length) clearInterval(interval);
+    }, 200); // سرعة الكتابة (ملي ثانية)
+  }, 5000); // يبلش بعد انتهاء أنيميشن word1
+
+  // بعدين يختفي كل شي لما يخلص اللود
+  setTimeout(() => {
+    preloader.classList.add("loaded");
+    document.body.classList.add("loaded");
+  } , 10000)
 
 
 
+});
 
 
 
