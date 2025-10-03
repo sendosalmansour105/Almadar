@@ -30,22 +30,15 @@ setTimeout(() => {
       i++;
       if (i === text2.length) clearInterval(interval);
     }, 200); // سرعة الكتابة (ملي ثانية)
-  }, 1500); // يبلش بعد انتهاء أنيميشن word1
+  }, 500); // يبلش بعد انتهاء أنيميشن word1
 
   // بعدين يختفي كل شي لما يخلص اللود
   setTimeout(() => {
     preloader.classList.add("loaded");
     document.body.classList.add("loaded");
-  } , 6000)
-
-
+  } , 5000)
 
 });
-
-
-
-
-
 
 /** ================== NAVBAR TOGGLE ================== */
 const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
