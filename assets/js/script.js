@@ -30,13 +30,13 @@ setTimeout(() => {
       i++;
       if (i === text2.length) clearInterval(interval);
     }, 200); // سرعة الكتابة (ملي ثانية)
-  }, 300); // يبلش بعد انتهاء أنيميشن word1
+  }, 200); // يبلش بعد انتهاء أنيميشن word1
 
   // بعدين يختفي كل شي لما يخلص اللود
   setTimeout(() => {
     preloader.classList.add("loaded");
     document.body.classList.add("loaded");
-  } , 4800)
+  } , 4700)
 
 });
 
